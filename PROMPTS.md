@@ -2,7 +2,7 @@
 
 [Home](README.md) · [Setup](SETUP.md) · [Compatibility](COMPATIBILITY.md) · [Evidence](GATES.md)
 
-These **18 original prompts are a conditional menu**. Select the current task below and copy its code block or explicitly ask the agent to use the attached file. Follow the [usage and mention guidance](README.md#using-a-prompt); files in this directory do not register native commands or install skills.
+These **19 original prompts are a conditional menu**. Select the current task below and copy its code block or explicitly ask the agent to use the attached file. Follow the [usage and mention guidance](README.md#using-a-prompt); files in this directory do not register native commands or install skills.
 
 Use existing task context and authorization. A referenced source explains a capability; the prompt wording is this kit's synthesis. Each prompt states its own scope, so a read-only review prompt does not silently authorize fixes. When you want review and fixes, state that in the task and use the implementation and verification prompts for the corrections.
 
@@ -12,6 +12,7 @@ Use existing task context and authorization. A referenced source explains a capa
 
 | Prompt | Use when |
 |---|---|
+| [18 · Build a first useful version from an idea](prompts/18-build-from-idea.md) | Use when the user has an idea but no implementation plan or coding experience. |
 | [00 · Onboard the selected repository](prompts/00-onboard-repo.md) | Use once per repository, or after a material environment change. |
 | [01 · Define the task contract](prompts/01-task-contract.md) | Use when the desired outcome or scope is genuinely unclear. |
 | [02 · Resolve one material uncertainty](prompts/02-research-uncertainty.md) | Use for an external fact that could change implementation. |
@@ -51,4 +52,4 @@ Use existing task context and authorization. A referenced source explains a capa
 | [16 · Hand off a task without losing state](prompts/16-handoff.md) | Use at a real handoff or context boundary, not after every small edit. |
 | [17 · Evaluate one tool or skill addition](prompts/17-evaluate-addition.md) | Use before claiming a setup change improves shipping. |
 
-For an ordinary change, start with 04. Use 07 for missing or invalidated verification, reusing evidence that still applies. Use 00 when the environment is unfamiliar, and 09 for a separate review when risk warrants it. Publication and release depend on authorization for those actions and targets.
+For a new idea without a technical plan, start with 18. For an ordinary change in an existing repository, start with 04. Use 07 for missing or invalidated verification, reusing evidence that still applies. Use 00 when the environment is unfamiliar, and 09 for a separate review when risk warrants it. Publication and release depend on authorization for those actions and targets.

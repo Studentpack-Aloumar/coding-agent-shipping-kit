@@ -1,18 +1,18 @@
 {
-  "checked_at": "2026-09-24T18:49:21+00:00",
-  "package_version": "1.0.2",
+  "checked_at": "2026-09-24T19:08:06+00:00",
+  "package_version": "1.0.3",
   "scope": "Offline local documentation integrity; no external or runtime validation.",
-  "content_sha256": "7638c911672f154e9930e753c902632195776e160a57b2cea1f47785a1654929",
+  "content_sha256": "c839a5f14348151f5b501a35b88c6d8d2e325d617466d9a507846514cf1f9ed8",
   "digest_excludes": [
     "PACKAGE-CHECKS.json"
   ],
   "checks": {
-    "file_count": 39,
-    "markdown_files": 32,
-    "markdown_internal_links_resolved": 273,
+    "file_count": 40,
+    "markdown_files": 33,
+    "markdown_internal_links_resolved": 285,
     "markdown_code_fences_balanced": true,
     "json_files_parse": 5,
-    "prompt_files_indexed": 18,
+    "prompt_files_indexed": 19,
     "source_records_consistent": 32,
     "readme_manifest_version_consistent": true
   },

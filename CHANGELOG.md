@@ -2,6 +2,13 @@
 
 [Home](README.md) · [Prompts](PROMPTS.md) · [Setup](SETUP.md) · [Evidence](GATES.md) · [Sources](SOURCES.md)
 
+## 1.0.3 — 24 September 2026
+
+- Added a prompt for first-time builders that turns an idea into a small working journey while the agent handles routine technical choices.
+- Clarified honest task status, owner-accessible previews, recovery limits and the difference between a stated budget and an enforced spending cap.
+- Strengthened release evidence guidance for skipped or missing checks, current-candidate binding, real authenticated isolation and consistent gate exit status.
+- These additions are guidance informed by a user-provided conversation and inspection of its attached Ship Gate v1.0 package. They do not incorporate the plugin or validate its later v2.1 claims.
+
 ## 1.0.2 — 24 September 2026
 
 - Added task-based entry points, document navigation and guidance for attachments, file mentions and skill invocation.

@@ -1,6 +1,6 @@
 {
   "name": "coding-agent-shipping-kit",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "documentation_checked_on": "2026-09-24",
   "scope": "Source-backed reference, original prompts and inert templates; not a repository installation.",
   "runtime_tested_on_user_repositories": false,
@@ -264,7 +264,7 @@
       "checked_on": "2026-09-24"
     }
   ],
-  "prompt_count": 18,
+  "prompt_count": 19,
   "prompt_files": [
     "prompts/00-onboard-repo.md",
     "prompts/01-task-contract.md",
@@ -283,7 +283,8 @@
     "prompts/14-authorized-release.md",
     "prompts/15-post-release.md",
     "prompts/16-handoff.md",
-    "prompts/17-evaluate-addition.md"
+    "prompts/17-evaluate-addition.md",
+    "prompts/18-build-from-idea.md"
   ],
   "rights_notice": {
     "name": "Proprietary — Basem Aloumar only",

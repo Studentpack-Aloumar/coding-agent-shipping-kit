@@ -9,6 +9,12 @@ For an ordinary scoped change: **understand → implement → verify → deliver
 
 Use the coding agent that already has a functioning repository environment. This research does not establish that switching models or clients would improve your results. My recommended first intervention is a reliable startup recipe and clear acceptance criteria; compare tool additions afterward.
 
+## For a first-time builder
+
+When a user describes an idea rather than a specific code change, use the [build-from-idea prompt](prompts/18-build-from-idea.md). Capture the essential user journey and information/spending constraints, then make routine technical decisions in the selected workspace. A working version requires executed implementation and tested behavior. A saved brief, plan, or screen showing progress steps without an executing job is not a running build.
+
+Keep status understandable: queued work is not running work; a preview must open for the owner and point to the tested revision; a changed brief can invalidate older green evidence. For risky source edits, make recovery practical. A source checkpoint does not restore database records, external resources or provider charges. A budget requested in chat is a planning limit unless the provider enforces it.
+
 ## 2. Match the resource to the decision
 The choices and gates below are recommendations. The linked resources establish capabilities, not comparative superiority. Reuse the tools already available. A named optional tool is not a prerequisite when an existing capability can meet the requirement.
 

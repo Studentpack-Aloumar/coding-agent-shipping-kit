@@ -35,6 +35,14 @@ Use client permissions, sandboxing, service access controls and CI enforcement. 
 
 Use `not_run`, `fail`, `blocked` or justified `not_applicable` instead of inventing success. A baseline failure is a recorded blocker or explicitly accepted exception—not a pass. After material edits, rerun invalidated checks and reassess the candidate. Required status checks have specific revision and skipped-workflow semantics. [R26](SOURCES.md#r26)
 
+## Check the verdict, not only the label
+
+A release gate must read the actual process result and executed test cases. A skipped test, a matching test title, a green summary from an older revision or an empty result set does not prove a requirement passed. Mark required checks that fail, are skipped, cannot run or are missing as blocked until they run successfully or an applicable exception is explicitly recorded. A focused or partial run may clear only the checks it actually executed.
+
+For a user-facing done condition, connect the condition to an observed journey and repeatable check where appropriate. For authenticated data, inspect the real access path with separate synthetic users: verify that each sees their own data, cannot read the other's, and that anonymous access behaves as intended. Static policies and test source text alone do not establish effective isolation. Use an isolated development environment; keep credentials and private records out of evidence.
+
+Record a current task or job identifier only when work is actually executing. If the brief, candidate revision, deployment or relevant environment changes, reassess dependent evidence. A gate implementation should keep its machine-readable status, printed verdict and process exit code consistent; a repair loop must not call a blocked gate green.
+
 ## Evidence record
 Record the task/acceptance criteria, base/head revisions or diff identity, environment, commands, start time, exit code, result, artifact locations, reviewer findings, approvals and unresolved risks. Keep secrets out of logs and evidence. The included JSON schema standardizes the shape only; it cannot prove that assertions or approvals are genuine.
 
