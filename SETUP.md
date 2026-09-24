@@ -2,7 +2,11 @@
 
 [Home](README.md) · [Compatibility](COMPATIBILITY.md) · [Gates](GATES.md)
 
-**Examples only; not executed.** Commands may download code, change settings or authenticate. Inventory existing capabilities first. Inspect publisher, contents, privileges, recipients and costs; select/record reviewed versions. No unpinned recurring installers or duplicate installations.
+**Optional installation examples; not executed.** Commands may download code, change settings or authenticate. Inventory existing capabilities first. Inspect publisher, contents, privileges, recipients and costs; select/record reviewed versions. No unpinned recurring installers or duplicate installations.
+
+## Included project skill
+
+This checkout includes `.agents/skills/ship-task/`. Open a fresh task here and invoke `$ship-task` in a compatible client. No global configuration required. Its links depend on this complete checkout; copying only the skill folder breaks them. Other repositories can use the original prompts directly. [Roles](.agents/skills/ship-task/references/roles.md) · [Sources by layer](REUSE.md).
 
 ## Native capabilities first
 
@@ -24,7 +28,7 @@ Use applicable setup authority; adopted [owner agreement](templates/INSTRUCTIONS
 
 Sources: [R08](SOURCES.md#r08) [R09](SOURCES.md#r09) [R10](SOURCES.md#r10) [R11](SOURCES.md#r11) [R12](SOURCES.md#r12) [R13](SOURCES.md#r13) [R15](SOURCES.md#r15).
 
-Playwright CLI needs Node.js 20+; verify skill-directory support/discovery. Install `gh-fix-ci` through Codex's official skill installer; preserve fix-plan approval, reusing applicable authorization. [R20](SOURCES.md#r20)
+Playwright CLI needs Node.js 20+; verify skill-directory support/discovery. `gh-fix-ci` references the deprecated OpenAI Skills repository; inspect currently available CI tools before installation. [R20](SOURCES.md#r20)
 
 ## Vercel connection, only when needed
 

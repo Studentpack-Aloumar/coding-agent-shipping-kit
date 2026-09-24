@@ -8,7 +8,8 @@ Extreme concision, everywhere: replies, docs, prompts, comments. Sacrifice gramm
 
 - Root Markdown: guides. `prompts/`: 19 copyable task prompts.
 - `templates/`: inactive examples. `evaluation/`: benchmark records.
-- `tools/check-kit.py`: offline integrity checker. No app/build/dependencies.
+- `.agents/skills/`: project-local workflow and roles. `reuse.json`: external sources.
+- `tools/`: integrity/evidence checks. No app/build; evidence validator uses pinned `jsonschema` through `uv`.
 
 ## Editing
 
@@ -26,7 +27,7 @@ python3 tools/check-kit.py
 git diff --check
 ```
 
-Checks: links, anchors, inventories, JSON, versions, digest. No external-fact, schema, security or runtime validation. No coverage target.
+Checks: links, anchors, inventories, JSON, versions, digest. Evidence changes: `uv run tools/check-evidence.py templates/shipping-evidence.example.json`. No external-fact, security or runtime validation. No coverage target.
 
 ## Delivery
 

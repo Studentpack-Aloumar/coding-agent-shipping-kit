@@ -1,8 +1,8 @@
 {
   "name": "coding-agent-shipping-kit",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "documentation_checked_on": "2026-09-24",
-  "scope": "Sourced reference, original prompts, inactive templates; no target-repository installation.",
+  "scope": "Original prompts, project-local skill, external-source catalogue and inactive evidence templates.",
   "runtime_tested_on_user_repositories": false,
   "benchmarked": false,
   "external_writes_performed": true,
@@ -164,7 +164,7 @@
       "title": "OpenAI — gh-fix-ci skill",
       "url": "https://github.com/openai/skills/blob/main/skills/.curated/gh-fix-ci/SKILL.md",
       "evidence_kind": "Maintainer skill source",
-      "note": "GitHub Actions via gh; fix-plan approval.",
+      "note": "Historical GitHub Actions skill; repository deprecated. Inspect current replacements.",
       "checked_on": "2026-09-24"
     },
     {
@@ -326,6 +326,14 @@
       "evidence_kind": "Vendor documentation",
       "note": "Retrieved API effort through max; client ultra equivalence unestablished.",
       "checked_on": "2026-09-24"
+    },
+    {
+      "id": "R41",
+      "title": "python-jsonschema — Validation",
+      "url": "https://python-jsonschema.readthedocs.io/en/stable/validate/",
+      "evidence_kind": "Maintainer documentation",
+      "note": "Draft 2020-12 validation with explicit format checking; no truth or authorization proof.",
+      "checked_on": "2026-09-24"
     }
   ],
   "prompt_count": 19,
@@ -367,5 +375,10 @@
     "default_branch": "main",
     "verified_on": "2026-09-24",
     "scope": "Reference-kit publication only; no app deployment."
-  }
+  },
+  "skill_files": [
+    ".agents/skills/ship-task/SKILL.md"
+  ],
+  "reuse_catalog": "reuse.json",
+  "reuse_source_count": 37
 }

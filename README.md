@@ -1,12 +1,12 @@
 # Coding-agent shipping kit
 
-**24 September 2026 · v1.1.1 · Reference kit; uninstalled, unbenchmarked.**
+**24 September 2026 · v1.2.0 · Project-local skill; unbenchmarked.**
 
 **Proprietary: mr. Aloumar only.** No general reuse license. Public GitHub viewing/forking rights remain; see [LICENSE](LICENSE). Custom notice: no legal review.
 
 ## Start here
 
-Use your existing agent in the **target application repository**. Choose one of 19 prompts. No installation required.
+Use your existing agent in the **target application repository**. Choose one of 19 prompts. This checkout also provides [ship-task](.agents/skills/ship-task/SKILL.md), discoverable by compatible clients; invoke `$ship-task` here.
 
 | Task | Prompt |
 |---|---|
@@ -35,9 +35,10 @@ Files supply context; mentions alone grant no authority. Prompts register no sla
 | [Product excellence](PRODUCT-EXCELLENCE.md) | Discovery, design, complete journeys, critique |
 | [Playbook](PLAYBOOK.md) | Workflow and resource selection |
 | [Resources](RESOURCES.md) · [Setup](SETUP.md) · [Compatibility](COMPATIBILITY.md) | Tools, activation, client differences |
+| [Reuse catalogue](REUSE.md) · [Task roles](.agents/skills/ship-task/references/roles.md) | 37 external sources; builder, reviewer, verifier |
 | [Evidence gates](GATES.md) | Permissions and completion requirements |
 | [Templates](templates/README.md) | Instructions and evidence records |
-| [Evaluation](EVALUATION.md) · [Sources](SOURCES.md) | Experiments and 40 primary references |
+| [Evaluation](EVALUATION.md) · [Sources](SOURCES.md) | Experiments and 41 primary references |
 | [Maintenance](PUBLISH.md) · [Changelog](CHANGELOG.md) · [Contributing](AGENTS.md) | Repository upkeep |
 
 ## Check this checkout
@@ -48,6 +49,12 @@ Python 3.9+, offline, no dependencies:
 python3 tools/check-kit.py
 ```
 
-Checks links, anchors, inventories, JSON, versions and [saved digest](PACKAGE-CHECKS.json). [Refresh after edits](PUBLISH.md#maintaining-the-kit).
+Checks links, anchors, prompt/skill/source inventories, JSON, versions and [saved digest](PACKAGE-CHECKS.json). [Refresh after edits](PUBLISH.md#maintaining-the-kit).
 
-Recommendations remain unbenchmarked; [results](evaluation/results.json): `not_run`. No target-app installation or deployment implied. Third-party skills are linked, not copied; templates stay inactive.
+Validate evidence structure/timestamps (Python 3.10+, `uv`; downloads pinned validator initially):
+
+```sh
+uv run tools/check-evidence.py templates/shipping-evidence.example.json
+```
+
+Recommendations remain unbenchmarked; [results](evaluation/results.json): `not_run`. Third-party resources stay linked; templates inactive. Evidence validation proves no release readiness.

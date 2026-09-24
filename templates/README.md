@@ -18,4 +18,6 @@ Record candidate, criteria, checks, approvals, review and gaps. Use `notes` for 
 
 Schema checks structure only; proves no identities, approvals or [completion states](../GATES.md#completion-states). Use Draft 2020-12 with timestamp format checking. Package checker parses JSON only.
 
+From kit root: `uv run tools/check-evidence.py path/to/evidence.json`. Exit 0: schema/timestamps valid; 1: invalid. Python 3.10+, pinned `jsonschema` dependency; [validator docs](../SOURCES.md#r41). No readiness score.
+
 Keep real evidence/sensitive logs in the authorized target project, outside this public kit.

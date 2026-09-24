@@ -2,6 +2,8 @@
 
 [Home](README.md) · [Setup](SETUP.md) · [Compatibility](COMPATIBILITY.md)
 
+[Expanded catalogue](REUSE.md): skills, plugins, roles, checks and application layers; pinned sources where available.
+
 Selected for primary ownership, task fit and documented integration. No performance ranking; installation examples remain opt-in.
 
 | Resource | Use / boundary |
@@ -16,7 +18,7 @@ Selected for primary ownership, task fit and documented integration. No performa
 | `shadcn` | Existing shadcn projects, `components.json`, CLI; operations can change dependencies/files. [R12](SOURCES.md#r12) |
 | `supabase-postgres-best-practices` | SQL/schema/index/policy; broader integration uses `supabase`. Guidance grants no access; live MCP development-scoped. [R13](SOURCES.md#r13) [R14](SOURCES.md#r14) |
 | Playwright | CLI for shell agents; MCP when environment/exploration warrants. Durable assertions belong in project tests. [R15](SOURCES.md#r15) [R16](SOURCES.md#r16) |
-| `gh-fix-ci` | GitHub Actions via `gh`; external CI excluded. Fix-plan approval required; reuse existing approval. [R20](SOURCES.md#r20) |
+| `gh-fix-ci` | Historical skill source; OpenAI Skills repository deprecated. Prefer existing CI tools; retain fix authority. [R20](SOURCES.md#r20) |
 | GitHub CLI/MCP | Existing authenticated route, scoped repositories, authorized PR actions; cloud restrictions apply. [R21](SOURCES.md#r21) [R19](SOURCES.md#r19) |
 | Vercel CLI/MCP | Deployments/logs; OAuth/client compatibility. Confirm target and release authority. [R22](SOURCES.md#r22) [R23](SOURCES.md#r23) |
 

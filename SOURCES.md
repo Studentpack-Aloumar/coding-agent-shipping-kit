@@ -106,7 +106,7 @@ Vendor documentation. Cloud/review OAuth limitation, autonomous tools, allowlist
 <a id="r20"></a>
 ### R20 · [OpenAI — gh-fix-ci skill](https://github.com/openai/skills/blob/main/skills/.curated/gh-fix-ci/SKILL.md)
 
-Maintainer skill source. GitHub Actions via gh; fix-plan approval.
+Historical skill source. GitHub Actions via gh; repository now deprecated. Inspect current replacements before adoption.
 
 <a id="r21"></a>
 ### R21 · [GitHub — Official MCP server](https://github.com/github/github-mcp-server)
@@ -207,3 +207,8 @@ Publisher methodology. Hypotheses, prototypes, user validation; agents are not c
 ### R40 · [OpenAI — GPT-6 Astra model](https://developers.openai.com/api/docs/models/gpt-6-astra)
 
 Vendor documentation. Retrieved API effort through max; client ultra equivalence unestablished.
+
+<a id="r41"></a>
+### R41 · [python-jsonschema — Validation](https://python-jsonschema.readthedocs.io/en/stable/validate/)
+
+Maintainer documentation. Draft 2020-12 validation with explicit format checking; no truth or authorization proof.

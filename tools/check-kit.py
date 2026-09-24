@@ -88,6 +88,32 @@ def check(write_report=False):
     index = files['PROMPTS.md'].decode()
     if any(f']({p})' not in index for p in prompts):
         raise ValueError('prompt index omits a prompt')
+    skills = sorted(n for n in files if n.startswith('.agents/skills/') and n.endswith('/SKILL.md'))
+    if sorted(manifest['skill_files']) != skills:
+        raise ValueError('manifest skill inventory differs from skill files')
+    for name in skills:
+        content = files[name].decode()
+        header = re.match(r'^---\n(.*?)\n---\n', content, re.S)
+        if not header:
+            raise ValueError(f'{name}: missing skill frontmatter')
+        skill_name = re.search(r'^name: ([a-z0-9]+(?:-[a-z0-9]+)*)$', header[1], re.M)
+        description = re.search(r'^description: (\S[^\n]*)$', header[1], re.M)
+        if (not skill_name or skill_name[1] != Path(name).parent.name
+                or len(skill_name[1]) > 64 or not description or len(description[1]) > 1024):
+            raise ValueError(f'{name}: invalid kit skill name/description')
+    reuse = data[manifest['reuse_catalog']]['sources']
+    if len(reuse) != manifest['reuse_source_count'] or len({s['url'] for s in reuse}) != len(reuse):
+        raise ValueError('reuse source count differs or duplicate URL')
+    reuse_index = files['REUSE.md'].decode()
+    for source in reuse:
+        if not all(isinstance(source.get(k), str) and source[k].strip()
+                   for k in ('name', 'layer', 'url', 'license', 'limits')):
+            raise ValueError('reuse source has missing fields')
+        url = urlsplit(source['url'])
+        if url.scheme != 'https' or not url.netloc or url.username or url.password:
+            raise ValueError('reuse source must use HTTPS without credentials')
+        if f']({source["url"]})' not in reuse_index:
+            raise ValueError(f'{source["name"]}: reuse index omits source')
     sources = manifest['sources']
     if len({s['id'] for s in sources}) != len(sources):
         raise ValueError('duplicate source IDs in manifest')
@@ -112,6 +138,8 @@ def check(write_report=False):
         'markdown_code_fences_balanced': True,
         'json_files_parse': len(data),
         'prompt_files_indexed': len(prompts),
+        'skill_files_indexed': len(skills),
+        'reuse_sources_indexed': len(reuse),
         'source_records_consistent': len(sources),
         'readme_manifest_version_consistent': True,
     }

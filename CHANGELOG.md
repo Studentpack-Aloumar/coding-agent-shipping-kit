@@ -8,6 +8,13 @@
 - Added repository `AGENTS.md`: extreme concision throughout.
 - Preserved authorization/evidence gates, source inventory and schema behavior.
 
+## 1.2.0 — 24 September 2026
+
+- Project-local `ship-task` skill; builder/reviewer/verifier roles.
+- 37 public external references, indexed and machine-readable; no third-party code copied.
+- Skill/catalogue integrity checks; pinned JSON Schema validator with timestamp checks.
+- Marked deprecated OpenAI Skills source; no global installation or benchmark.
+
 ## 1.1.1 — 24 September 2026
 
 - Owner display name: mr. Aloumar.
