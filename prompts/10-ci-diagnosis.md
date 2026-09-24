@@ -1,9 +1,11 @@
 # Diagnose CI without weakening it
 
+[Home](../README.md) · [All prompts](../PROMPTS.md) · [How to use](../README.md#using-a-prompt)
+
 **Trigger:** Use for failing, missing or excessively duplicated checks.
 
 ```text
-Inspect the current candidate's CI configuration and actual failed or missing checks. Use existing GitHub access. If gh-fix-ci is installed, follow its GitHub Actions scope and approval requirement before implementing a fix.
+Inspect the current candidate's CI configuration and actual failed or missing checks. Use existing GitHub access. If using gh-fix-ci, follow its GitHub Actions scope and fix-plan approval requirement, reusing applicable approval already supplied. Otherwise use the existing provider tools within this task's authorization.
 
 Identify whether the cause is code, setup, permissions, infrastructure, stale evidence or a workflow trigger. Distinguish required head/test-merge checks and merge-queue behavior. Read relevant logs with secrets redacted.
 

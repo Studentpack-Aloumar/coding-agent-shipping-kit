@@ -1,5 +1,7 @@
 # Diagnose and fix a failure
 
+[Home](../README.md) · [All prompts](../PROMPTS.md) · [How to use](../README.md#using-a-prompt)
+
 **Trigger:** Use when a check or observed behavior fails.
 
 ```text

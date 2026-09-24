@@ -1,4 +1,7 @@
 # Does an added skill or tool improve shipping?
+
+[Home](README.md) · [Prompts](PROMPTS.md) · [Setup](SETUP.md) · [Evidence](GATES.md) · [Sources](SOURCES.md)
+
 **Proposed evaluation protocol; no runs have been performed.** The goal is to test your setup, not reproduce a vendor leaderboard. OpenAI describes evaluating skills with task outcomes and execution traces, including wasteful work and resource use. [R27](SOURCES.md#r27)
 
 ## Experiment

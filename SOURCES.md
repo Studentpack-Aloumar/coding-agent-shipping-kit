@@ -1,8 +1,12 @@
 # Source register
 
+[Home](README.md) · [Prompts](PROMPTS.md) · [Setup](SETUP.md) · [Evidence](GATES.md) · [Sources](SOURCES.md)
+
 Checked on **24 September 2026** using Exa and primary-source web retrieval. Links are to publishers or maintainers, not repackaged skill catalogues.
 
 Documentation supports the listed capabilities, not a claim that a package is fastest, independently audited, or supported forever. No user repository, installed client, benchmark run or deployment was inspected. Source pages can change after this date.
+
+The v1.0.2 maintenance pass checked all 32 URLs for HTTP availability and rechecked selected compatibility/setup claims (R04, R05, R08, R09, R12, R15, R17, R19, R20, R23 and R30). All URLs responded successfully, including redirects. Link availability is not full factual revalidation of every statement. The original statement above describes the initial research, not the subsequent publication recorded in [PUBLISH.md](PUBLISH.md).
 
 <a id="r01"></a>
 ### R01 · OpenAI — Codex best practices

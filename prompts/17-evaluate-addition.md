@@ -1,5 +1,7 @@
 # Evaluate one tool or skill addition
 
+[Home](../README.md) · [All prompts](../PROMPTS.md) · [How to use](../README.md#using-a-prompt)
+
 **Trigger:** Use before claiming a setup change improves shipping.
 
 ```text

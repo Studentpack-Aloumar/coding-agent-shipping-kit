@@ -1,5 +1,7 @@
 # Assess production readiness
 
+[Home](../README.md) · [All prompts](../PROMPTS.md) · [How to use](../README.md#using-a-prompt)
+
 **Trigger:** Read-only release assessment; does not authorize a release.
 
 ```text

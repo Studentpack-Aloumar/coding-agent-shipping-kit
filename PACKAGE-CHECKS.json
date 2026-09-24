@@ -1,33 +1,26 @@
 {
-  "checked_on": "2026-09-24",
-  "package_version": "1.0.1",
-  "scope": "Local owner-only license update, archive structure and limited known-secret-pattern checks. Not a comprehensive legal, copyright or security audit.",
+  "checked_at": "2026-09-24T18:49:21+00:00",
+  "package_version": "1.0.2",
+  "scope": "Offline local documentation integrity; no external or runtime validation.",
+  "content_sha256": "7638c911672f154e9930e753c902632195776e160a57b2cea1f47785a1654929",
+  "digest_excludes": [
+    "PACKAGE-CHECKS.json"
+  ],
   "checks": {
-    "file_count": 35,
-    "prompt_files_preserved_byte_for_byte": 18,
-    "source_records_preserved": 32,
-    "all_original_files_retained": true,
-    "markdown_internal_links_resolved": 133,
+    "file_count": 39,
+    "markdown_files": 32,
+    "markdown_internal_links_resolved": 273,
     "markdown_code_fences_balanced": true,
-    "json_files_parse": true,
-    "evidence_schema_draft_2020_12_valid": true,
-    "owner_only_notice_in_root_license": true,
-    "readme_and_manifest_consistent_with_license": true,
-    "platform_third_party_and_legal_exceptions_preserved": true,
-    "no_git_history_env_files_executables_or_active_workflows": true,
-    "no_active_root_agent_instructions_or_skills": true,
-    "known_secret_pattern_hits": 0,
-    "email_address_pattern_hits": 0,
-    "benchmark_results_unchanged": true
+    "json_files_parse": 5,
+    "prompt_files_indexed": 18,
+    "source_records_consistent": 32,
+    "readme_manifest_version_consistent": true
   },
   "not_performed": [
-    "GitHub repository creation or file push",
-    "Enabling or verifying GitHub push protection",
-    "Legal review or enforceability determination",
-    "Copyright eligibility determination for AI-generated material",
-    "Complete secret or sensitive-information audit",
-    "Revalidation of the original 32 external documentation references",
-    "Coding-agent installation or performance benchmarks",
-    "Application deployment"
+    "External URL or factual validation by this checker",
+    "JSON Schema validation or enforcement of completion gates",
+    "Secret scanning or legal review",
+    "Coding-agent installation, benchmarks or application deployment",
+    "Remote GitHub verification by this checker"
   ]
 }

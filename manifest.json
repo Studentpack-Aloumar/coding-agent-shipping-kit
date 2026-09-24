@@ -1,11 +1,11 @@
 {
   "name": "coding-agent-shipping-kit",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "documentation_checked_on": "2026-09-24",
   "scope": "Source-backed reference, original prompts and inert templates; not a repository installation.",
   "runtime_tested_on_user_repositories": false,
   "benchmarked": false,
-  "external_writes_performed": false,
+  "external_writes_performed": true,
   "sources": [
     {
       "id": "R01",
@@ -294,5 +294,13 @@
     "open_source": false,
     "effective_on": "2026-09-24",
     "qualification": "Subject to applicable rights, platform terms, prior licenses, third-party rights and legal exceptions."
+  },
+  "publication": {
+    "repository_url": "https://github.com/Studentpack-Aloumar/coding-agent-shipping-kit",
+    "initial_published_revision": "285409a6b30bb6e565b8cfb52beb5a021c6a2a29",
+    "visibility": "public",
+    "default_branch": "main",
+    "verified_on": "2026-09-24",
+    "scope": "Publication of this reference kit only; no application deployment."
   }
 }

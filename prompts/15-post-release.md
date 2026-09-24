@@ -1,5 +1,7 @@
 # Verify the shipped behavior
 
+[Home](../README.md) · [All prompts](../PROMPTS.md) · [How to use](../README.md#using-a-prompt)
+
 **Trigger:** Use for a bounded check of an actual completed release.
 
 ```text

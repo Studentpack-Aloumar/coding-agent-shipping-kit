@@ -1,11 +1,13 @@
 # Resolve one material uncertainty
 
+[Home](../README.md) · [All prompts](../PROMPTS.md) · [How to use](../README.md#using-a-prompt)
+
 **Trigger:** Use for an external fact that could change implementation.
 
 ```text
 Resolve the specific external uncertainty blocking the current task. Check the dependency version and existing implementation first.
 
-Use Exa to find the relevant publisher documentation when its location is unknown. For an indexed library/API, Context7 may provide version-specific material; confirm the actual source and applicable version. Do not use both automatically.
+Use the existing browser or search capability to find relevant publisher documentation when its location is unknown. Exa and Context7 are optional choices when available; confirm the actual source and applicable version. Do not install a retriever or invoke several tools for the same question without a demonstrated need.
 
 Return the decision, supporting primary links, version/date applicability, remaining uncertainty and the exact consequence for our code or tests. Distinguish documented facts from your inference. If sources disagree, explain the consequential difference.
 

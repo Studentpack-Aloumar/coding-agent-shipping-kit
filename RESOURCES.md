@@ -1,4 +1,7 @@
 # Actual resource shortlist
+
+[Home](README.md) · [Prompts](PROMPTS.md) · [Setup](SETUP.md) · [Evidence](GATES.md) · [Sources](SOURCES.md)
+
 **Selection basis:** primary ownership, a concrete development task and documented integration. This is not a measured best-to-worst ranking. Commands in [SETUP.md](SETUP.md) are opt-in examples, not actions performed for you.
 
 | Resource | What to use it for | Activation / important boundary |
@@ -13,12 +16,12 @@
 | Official `shadcn` skill | Work in an existing shadcn component system | Uses project context such as `components.json` and the shadcn CLI. Skip for unrelated UI stacks. Component operations can modify files/dependencies. [R12](SOURCES.md#r12) |
 | Supabase `supabase-postgres-best-practices` | SQL, schema, indexing and database-policy work | Guidance does not grant database access. Use `supabase` instead when the task concerns broader product/client integration. Keep any live MCP access development-scoped with nonproduction data. [R13](SOURCES.md#r13) [R14](SOURCES.md#r14) |
 | Playwright CLI plus project tests | Browser verification from a shell-capable coding agent | Install the CLI skill only when needed. Use MCP instead when the environment or persistent exploratory workflow favors it. Keep reproducible assertions in the project's test suite. [R15](SOURCES.md#r15) [R16](SOURCES.md#r16) |
-| OpenAI `gh-fix-ci` | Diagnose GitHub Actions failures on a PR | Uses `gh`; external CI providers are outside its stated scope. Its implementation phase requires explicit approval of the fix plan. Do not silently remove that requirement. [R20](SOURCES.md#r20) |
+| OpenAI `gh-fix-ci` | Diagnose GitHub Actions failures on a PR | Uses `gh`; external CI providers are outside its stated scope. Its implementation phase requires explicit approval of the fix plan; reuse that approval if already supplied for the same plan. [R20](SOURCES.md#r20) |
 | GitHub CLI or official GitHub MCP | Read issues/diffs/checks and perform authorized PR work | Reuse the authenticated route already present. Scope repository access and distinguish reading from publishing/merging. Copilot cloud has additional restrictions. [R21](SOURCES.md#r21) [R19](SOURCES.md#r19) |
 | Vercel CLI or official Vercel MCP | Inspect deployments/logs; carry out authorized releases | MCP uses OAuth and supports particular clients. Preview and production still need explicit target checks; an authenticated tool is not release approval. [R22](SOURCES.md#r22) [R23](SOURCES.md#r23) |
 
 ## My recommended default selection
-Keep one existing executor, native local tools, a tested launch recipe, current checks and one working browser path. Use Exa only to resolve an external uncertainty. For a React/Next.js change, add the Vercel React skill; for SQL work, add the Supabase Postgres skill instead. Do not preload every specialist into every task.
+Keep one existing executor, native local tools, a tested launch recipe, current checks and one working browser path. Use available search or retrieval to resolve an external uncertainty. For a React/Next.js change, use applicable React guidance; for SQL work, use relevant database guidance. Select an installed specialist when helpful, and add one only if a demonstrated gap justifies setup. Do not preload every specialist into every task.
 
 Use a full method such as Superpowers when you deliberately want its lifecycle. Do not assume that selecting two skill names from its README neutralizes the installed plugin's startup rules. If it is already active, respect its workflow or change the configuration explicitly.
 

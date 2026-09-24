@@ -1,5 +1,7 @@
 # Verify the deployed preview
 
+[Home](../README.md) · [All prompts](../PROMPTS.md) · [How to use](../README.md#using-a-prompt)
+
 **Trigger:** Use after preview deployment is authorized and target identity is known.
 
 ```text

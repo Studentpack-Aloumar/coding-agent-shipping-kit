@@ -1,5 +1,7 @@
 # Review independently without editing
 
+[Home](../README.md) · [All prompts](../PROMPTS.md) · [How to use](../README.md#using-a-prompt)
+
 **Trigger:** Use for substantive or risky changes, ideally in a fresh review context.
 
 ```text

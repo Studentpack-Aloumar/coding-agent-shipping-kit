@@ -1,5 +1,7 @@
 # Plan a nontrivial change
 
+[Home](../README.md) · [All prompts](../PROMPTS.md) · [How to use](../README.md#using-a-prompt)
+
 **Trigger:** Use for multi-system, high-risk or poorly understood work; skip routine edits.
 
 ```text

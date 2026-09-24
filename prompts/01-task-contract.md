@@ -1,5 +1,7 @@
 # Define the task contract
 
+[Home](../README.md) · [All prompts](../PROMPTS.md) · [How to use](../README.md#using-a-prompt)
+
 **Trigger:** Use when the desired outcome or scope is genuinely unclear.
 
 ```text

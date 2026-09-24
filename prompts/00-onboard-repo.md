@@ -1,5 +1,7 @@
 # Onboard the selected repository
 
+[Home](../README.md) · [All prompts](../PROMPTS.md) · [How to use](../README.md#using-a-prompt)
+
 **Trigger:** Use once per repository, or after a material environment change.
 
 ```text

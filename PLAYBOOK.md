@@ -1,4 +1,7 @@
 # Shipping playbook
+
+[Home](README.md) · [Prompts](PROMPTS.md) · [Setup](SETUP.md) · [Evidence](GATES.md) · [Sources](SOURCES.md)
+
 **Recommendation:** optimize accepted, working changes—not generated code, agent count or number of installed skills.
 
 ## 1. Use a small default loop
@@ -7,13 +10,13 @@ For an ordinary scoped change: **understand → implement → verify → deliver
 Use the coding agent that already has a functioning repository environment. This research does not establish that switching models or clients would improve your results. My recommended first intervention is a reliable startup recipe and clear acceptance criteria; compare tool additions afterward.
 
 ## 2. Match the resource to the decision
-The choices and gates below are recommendations. The linked resources establish capabilities, not comparative superiority.
+The choices and gates below are recommendations. The linked resources establish capabilities, not comparative superiority. Reuse the tools already available. A named optional tool is not a prerequisite when an existing capability can meet the requirement.
 
 | Development stage | Recommended resource | Trigger / when to skip | Evidence before proceeding |
 |---|---|---|---|
 | Orient and start | Native file search, shell and existing setup scripts; Copilot setup steps only for Copilot cloud | New repo or changed environment; otherwise reuse the verified recipe | Actual runtime, commands, relevant paths and baseline status |
 | Define the change | Native agent conversation; a short task contract | Ambiguous outcome, users or scope; skip when already explicit | Observable acceptance conditions and exclusions |
-| Resolve uncertainty | Exa for primary-source discovery; Context7 for indexed library/version details | Material API or architecture uncertainty; skip settled facts | Applicable version, source and implementation consequence |
+| Resolve uncertainty | Existing search/browser; Exa or Context7 when available and useful | Material API or architecture uncertainty; skip settled facts | Applicable version, source and implementation consequence |
 | Plan | Native plan mode; existing Superpowers planning when that framework is deliberately in use | Multi-system, irreversible or poorly understood change | Small ordered plan, dependencies and tests |
 | Implement | Native editor, language navigation and existing test tools | Every code change; do not add a generic implementation skill by default | Scoped diff that meets the contract |
 | Apply domain expertise | Vercel React/UI skills, shadcn or Supabase skills | Only the matching framework or subsystem | Actual relevant rule applied, not an unrelated rewrite |
@@ -65,9 +68,9 @@ My proposed cost controls: cancel obsolete PR-validation runs, cache dependencie
 An absent, skipped or stale check is not a pass. Do not disable branch protection, remove failing assertions or weaken policy to improve apparent throughput.
 
 ## 9. Make the release boundary explicit
-A build, a preview URL and a production deployment are different achievements. Before any deployment, confirm the account, existing project, revision, target environment, data isolation and authorization. Vercel documents an important exception: a new project's first deployment is production. A plain CLI invocation is therefore not an unconditional preview guarantee. [R23](SOURCES.md#r23)
+A build, a preview URL and a production deployment are different achievements. Before any deployment, confirm the account, existing project, revision, target environment, data isolation and authorization. Before a push or merge, inspect whether that action automatically deploys or releases; production approval must cover those effects too. Vercel documents an important exception: a new project's first deployment is production. A plain CLI invocation is therefore not an unconditional preview guarantee. [R23](SOURCES.md#r23)
 
-Use the current deployment from the Git integration rather than starting an unnecessary duplicate. Record an immutable deployment identifier, not only a moving branch alias. Production approval should identify the artifact and material migrations/configuration changes. Reassess approval when the release changes materially.
+Reuse authorization already supplied for the same action, artifact and target. Use the current deployment from the Git integration rather than starting an unnecessary duplicate. Record an immutable deployment identifier, not only a moving branch alias. Production approval should identify the artifact and material migrations/configuration changes. Reassess approval when the release changes materially.
 
 Application rollback cannot be assumed to undo external database, API or content-system changes. Review compatibility and recovery separately. Observe the actual shipped revision for a stated period and report only what was checked; a single successful request is not evidence of universal health. [R24](SOURCES.md#r24)
 

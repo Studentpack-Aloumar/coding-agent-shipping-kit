@@ -1,5 +1,7 @@
 # Change data access or schema safely
 
+[Home](../README.md) · [All prompts](../PROMPTS.md) · [How to use](../README.md#using-a-prompt)
+
 **Trigger:** Use for database, query, access-policy or persistent-data work.
 
 ```text

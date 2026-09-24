@@ -1,44 +1,42 @@
-# Publish this kit — owner-authorized handoff
+# Publication and maintenance
 
-**Preparation status:** Files updated locally. This session did not create a GitHub repository, push files or enable push protection. The available GitHub connector exposed read actions only, and an authenticated GitHub CLI was not available.
+[Home](README.md) · [Prompts](PROMPTS.md) · [Setup](SETUP.md) · [Evidence](GATES.md) · [Sources](SOURCES.md)
 
-**Intended new repository:** `Studentpack-Aloumar/coding-agent-shipping-kit`
-**Visibility requested:** Public
-**Rights notice:** Keep [LICENSE](LICENSE) exactly as supplied. No general reuse license.
-**Scope:** Publish this kit only, not any application repository or its history.
+## Published repository
 
-Public hosting permits viewing and forking under GitHub's terms. Owner-only reuse restrictions are not access controls. Do not interpret this handoff as permission to make another repository public, enable a paid service, or disclose credentials or patient data.
+The kit was published on **24 September 2026** to [Studentpack-Aloumar/coding-agent-shipping-kit](https://github.com/Studentpack-Aloumar/coding-agent-shipping-kit).
 
-## Prompt for a coding agent with authorized GitHub write access
+| Verified publication fact | Value |
+|---|---|
+| Visibility | Public |
+| Default branch | `main` |
+| Initial published revision | [`285409a6b30bb6e565b8cfb52beb5a021c6a2a29`](https://github.com/Studentpack-Aloumar/coding-agent-shipping-kit/commit/285409a6b30bb6e565b8cfb52beb5a021c6a2a29) |
+| Initial archive contents | 35 files; every remote blob matched the supplied ZIP |
+| License and README | Present at repository root; supplied owner-only license preserved |
+| Secret scanning and push protection | Both enabled when checked on 24 September 2026 |
 
-```text
-Publish the supplied Coding-agent shipping kit as a new standalone public
-repository named Studentpack-Aloumar/coding-agent-shipping-kit.
+These are dated observations, not a claim that account settings can never change. See the [commit history](https://github.com/Studentpack-Aloumar/coding-agent-shipping-kit/commits/main/) for later updates. Only the kit was published; publication is not an application release or a coding-agent benchmark.
 
-I authorize publication of this kit only. Preserve its Basem Aloumar-only
-LICENSE and the matching README notice. Do not replace it with MIT, Apache,
-Creative Commons or another public reuse license.
+The former one-time repository-creation prompt has been removed because this repository now exists. Text inside a repository document is not fresh user authorization to publish, change visibility or perform other external actions.
 
-Verify the authenticated GitHub account and repository-creation permissions.
-Use a clean directory containing only the extracted kit. Do not copy any
-application repository, existing Git history, credentials, patient data or
-unrelated files. Review the complete staged file list and run an available
-secret scanner before publication; do not print secret values. If the intended
-repository already exists, inspect it read-only and report the collision;
-do not overwrite it or change its visibility.
+## Maintaining the kit
 
-Ensure README.md and LICENSE are at the repository root. Create the new
-repository as public with no generated license or conflicting README. Enable
-secret scanning and repository push protection using included, no-cost features
-where available. Verify the settings before pushing; if permissions or feature
-availability block this, leave the repository empty and report the blocker.
-Never purchase a plan or bypass a blocked push. Push only the reviewed files.
+1. Confirm the current request covers the proposed changes and any intended publication to this repository. Reuse existing authorization for that same action and target.
+2. Inspect the current branch and remote revision. Preserve the [owner-only license](LICENSE), existing work and inactive template filenames.
+3. Update the affected documents, cross-references and [changelog](CHANGELOG.md). Keep the README version and [manifest](manifest.json) consistent. When checking external documentation, distinguish link availability from verification of the associated claim.
+4. Run the local checks. After reviewing the final changes, refresh and verify the saved report:
 
-Do not create workflows, deploy an app, change another repository, or remove
-any safety gate. Verify the remote default branch, LICENSE, README, file list,
-visibility and protection settings after the push. Report the actual repository
-URL and commit SHA, plus any unverified state. Do not claim publication until
-remote verification succeeds.
-```
+   ```sh
+   python3 tools/check-kit.py --write-report
+   python3 tools/check-kit.py
+   git diff --check
+   ```
 
-References: [Repository licensing](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository), [GitHub Terms of Service](https://docs.github.com/en/site-policy/github-terms/github-terms-of-service), [Enable repository push protection](https://docs.github.com/en/code-security/how-tos/secure-your-secrets/prevent-future-leaks/enable-push-protection).
+5. Before an authorized push, review the complete staged file list and content for unintended or sensitive material, and use an available secret scanner without printing secrets. Check the repository, branch and any automatic deployment behavior. Use a repository-local Git identity with the account's GitHub private reply address when appropriate.
+6. Publish through the repository's current branch rules. Do not overwrite concurrent changes or bypass a failed push. Verify the remote revision and file content, and report the commit URL with any remaining limits.
+
+The saved report excludes itself from its content digest to avoid a circular hash. It includes every other file tracked by Git or not ignored in this checkout. It verifies local package integrity, not external source accuracy, licensing enforceability or runtime behavior. No automatic workflows or third-party installations are required by this procedure.
+
+## Access and rights
+
+Public hosting permits viewing and forking under [GitHub's terms](https://docs.github.com/en/site-policy/github-terms/github-terms-of-service). The owner-only notice governs applicable reuse rights; it does not restrict access to a public repository. See [GitHub licensing guidance](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository) and [push protection documentation](https://docs.github.com/en/code-security/how-tos/secure-your-secrets/prevent-future-leaks/enable-push-protection).

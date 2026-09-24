@@ -1,11 +1,13 @@
 # Implement and inspect UI behavior
 
+[Home](../README.md) · [All prompts](../PROMPTS.md) · [How to use](../README.md#using-a-prompt)
+
 **Trigger:** Use for a UI change; not a mandate to redesign the application.
 
 ```text
 Implement the requested UI change using the existing design system. Preserve information hierarchy and established interactions unless the request changes them. Reuse existing components; use the shadcn skill only when this project actually uses shadcn.
 
-For React/Next.js, apply relevant Vercel React guidance to the changed path. Use web-design-guidelines for a focused review rather than a site-wide rewrite.
+For React/Next.js, apply relevant React guidance to the changed path. Use installed Vercel React or web-design-guidelines skills when applicable; existing project guidance and browser checks remain usable when those optional skills are unavailable.
 
 Inspect the running result at the affected desktop/mobile widths. Exercise the main journey plus relevant loading, empty, error and disabled states. Check keyboard operation, focus, accessible naming and console/network failures. Verify backend effects when the flow requires them.
 

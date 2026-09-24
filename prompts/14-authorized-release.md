@@ -1,5 +1,7 @@
 # Execute an explicitly authorized release
 
+[Home](../README.md) · [All prompts](../PROMPTS.md) · [How to use](../README.md#using-a-prompt)
+
 **Trigger:** Use only after approval identifies the target and material change.
 
 ```text
