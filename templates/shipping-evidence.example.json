@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0",
-  "task": "EXAMPLE ONLY: replace with the actual task and acceptance criteria.",
+  "task": "EXAMPLE: replace with task/acceptance criteria.",
   "candidate": {
-    "repository": "EXAMPLE ONLY: target repository",
+    "repository": "EXAMPLE: target repository",
     "base_revision": null,
     "head_revision": null,
     "worktree_diff_identity": null
@@ -10,7 +10,7 @@
   "completion_state": "blocked",
   "checks": [
     {
-      "name": "EXAMPLE ONLY: required behavior check",
+      "name": "EXAMPLE: required behavior",
       "kind": "behavior",
       "candidate_identity": null,
       "environment": "Not selected",
@@ -19,7 +19,7 @@
       "exit_code": null,
       "observed_at": null,
       "artifacts": [],
-      "notes": "No check has been performed."
+      "notes": "No checks run."
     }
   ],
   "review": {
@@ -28,12 +28,12 @@
     "independent_context": null,
     "findings": [],
     "limitations": [
-      "Example only; no candidate has been reviewed."
+      "Example; no reviewed candidate."
     ]
   },
   "authorizations": [],
   "deployment": null,
   "risks": [
-    "Replace all placeholders and gather evidence before claiming completion."
+    "Replace placeholders; gather completion evidence."
   ]
 }

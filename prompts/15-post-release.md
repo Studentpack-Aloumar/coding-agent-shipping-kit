@@ -1,17 +1,15 @@
-# Verify the shipped behavior
+# Verify production
 
-[Home](../README.md) · [All prompts](../PROMPTS.md) · [How to use](../README.md#using-a-prompt)
+[Prompts](../PROMPTS.md) · [Usage](../README.md#using-a-prompt)
 
-**Trigger:** Use for a bounded check of an actual completed release.
+**Use:** Bounded check after release.
 
 ```text
-Verify the release that actually reached the specified production target. Confirm deployment identity and revision first. Use existing observability and safe checks; do not introduce a new monitoring service.
+Confirm actual production deployment/revision. Use existing observability; add no monitoring service. Exercise only authorized journeys, preferably read-only. Writes require bounded synthetic accounts and approved cleanup.
 
-Exercise only the explicitly authorized production journey, preferably read-only. Test writes must use bounded synthetic accounts and an approved cleanup method. Inspect release-related errors, failed requests and the relevant performance signals for the observation window that is actually available.
+Inspect release errors, failed requests and relevant performance over the available interval. Compare criteria/baseline; separate regressions, existing issues and insufficient data.
 
-Compare against the stated acceptance criteria and any meaningful baseline. Separate regressions, pre-existing issues and insufficient data. Do not claim ongoing monitoring or future health from a one-time inspection.
-
-Return the exact checks and observation interval, production findings, uncertainty and whether the approved recovery condition was met. Do not roll back without applicable authorization.
+Return checks, interval, findings, uncertainty and whether approved recovery conditions were met. No claims of ongoing monitoring/future health or unauthorized rollback.
 ```
 
-Related documentation: [R24](../SOURCES.md#r24)
+Sources: [R24](../SOURCES.md#r24)

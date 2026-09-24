@@ -16,45 +16,17 @@
     "risks"
   ],
   "properties": {
-    "schema_version": {
-      "const": "1.0"
-    },
-    "task": {
-      "type": "string",
-      "minLength": 1
-    },
+    "schema_version": {"const": "1.0"},
+    "task": {"type": "string", "minLength": 1},
     "candidate": {
       "type": "object",
       "additionalProperties": false,
-      "required": [
-        "repository",
-        "base_revision",
-        "head_revision",
-        "worktree_diff_identity"
-      ],
+      "required": ["repository", "base_revision", "head_revision", "worktree_diff_identity"],
       "properties": {
-        "repository": {
-          "type": "string",
-          "minLength": 1
-        },
-        "base_revision": {
-          "type": [
-            "string",
-            "null"
-          ]
-        },
-        "head_revision": {
-          "type": [
-            "string",
-            "null"
-          ]
-        },
-        "worktree_diff_identity": {
-          "type": [
-            "string",
-            "null"
-          ]
-        }
+        "repository": {"type": "string", "minLength": 1},
+        "base_revision": {"type": ["string", "null"]},
+        "head_revision": {"type": ["string", "null"]},
+        "worktree_diff_identity": {"type": ["string", "null"]}
       }
     },
     "completion_state": {
@@ -86,116 +58,31 @@
           "notes"
         ],
         "properties": {
-          "name": {
-            "type": "string",
-            "minLength": 1
-          },
+          "name": {"type": "string", "minLength": 1},
           "kind": {
-            "enum": [
-              "unit",
-              "integration",
-              "e2e",
-              "typecheck",
-              "lint",
-              "build",
-              "behavior",
-              "ci",
-              "other"
-            ]
+            "enum": ["unit", "integration", "e2e", "typecheck", "lint", "build", "behavior", "ci", "other"]
           },
-          "candidate_identity": {
-            "type": [
-              "string",
-              "null"
-            ]
-          },
-          "environment": {
-            "type": "string",
-            "minLength": 1
-          },
-          "command_or_method": {
-            "type": [
-              "string",
-              "null"
-            ]
-          },
-          "result": {
-            "enum": [
-              "pass",
-              "fail",
-              "blocked",
-              "not_run",
-              "not_applicable"
-            ]
-          },
-          "exit_code": {
-            "type": [
-              "integer",
-              "null"
-            ]
-          },
-          "observed_at": {
-            "type": [
-              "string",
-              "null"
-            ],
-            "format": "date-time"
-          },
-          "artifacts": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
-          },
-          "notes": {
-            "type": "string"
-          }
+          "candidate_identity": {"type": ["string", "null"]},
+          "environment": {"type": "string", "minLength": 1},
+          "command_or_method": {"type": ["string", "null"]},
+          "result": {"enum": ["pass", "fail", "blocked", "not_run", "not_applicable"]},
+          "exit_code": {"type": ["integer", "null"]},
+          "observed_at": {"type": ["string", "null"], "format": "date-time"},
+          "artifacts": {"type": "array", "items": {"type": "string"}},
+          "notes": {"type": "string"}
         }
       }
     },
     "review": {
       "type": "object",
       "additionalProperties": false,
-      "required": [
-        "result",
-        "reviewed_candidate",
-        "independent_context",
-        "findings",
-        "limitations"
-      ],
+      "required": ["result", "reviewed_candidate", "independent_context", "findings", "limitations"],
       "properties": {
-        "result": {
-          "enum": [
-            "not_run",
-            "findings",
-            "no_actionable_findings",
-            "blocked"
-          ]
-        },
-        "reviewed_candidate": {
-          "type": [
-            "string",
-            "null"
-          ]
-        },
-        "independent_context": {
-          "type": [
-            "boolean",
-            "null"
-          ]
-        },
-        "findings": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          }
-        },
-        "limitations": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          }
-        }
+        "result": {"enum": ["not_run", "findings", "no_actionable_findings", "blocked"]},
+        "reviewed_candidate": {"type": ["string", "null"]},
+        "independent_context": {"type": ["boolean", "null"]},
+        "findings": {"type": "array", "items": {"type": "string"}},
+        "limitations": {"type": "array", "items": {"type": "string"}}
       }
     },
     "authorizations": {
@@ -203,87 +90,32 @@
       "items": {
         "type": "object",
         "additionalProperties": false,
-        "required": [
-          "action",
-          "target",
-          "candidate_identity",
-          "approval_reference"
-        ],
+        "required": ["action", "target", "candidate_identity", "approval_reference"],
         "properties": {
-          "action": {
-            "type": "string",
-            "minLength": 1
-          },
-          "target": {
-            "type": "string",
-            "minLength": 1
-          },
-          "candidate_identity": {
-            "type": [
-              "string",
-              "null"
-            ]
-          },
-          "approval_reference": {
-            "type": "string",
-            "minLength": 1
-          }
+          "action": {"type": "string", "minLength": 1},
+          "target": {"type": "string", "minLength": 1},
+          "candidate_identity": {"type": ["string", "null"]},
+          "approval_reference": {"type": "string", "minLength": 1}
         }
       }
     },
     "deployment": {
       "anyOf": [
-        {
-          "type": "null"
-        },
+        {"type": "null"},
         {
           "type": "object",
           "additionalProperties": false,
-          "required": [
-            "id",
-            "target",
-            "candidate_identity",
-            "url",
-            "observed_at"
-          ],
+          "required": ["id", "target", "candidate_identity", "url", "observed_at"],
           "properties": {
-            "id": {
-              "type": "string",
-              "minLength": 1
-            },
-            "target": {
-              "enum": [
-                "preview",
-                "production",
-                "other"
-              ]
-            },
-            "candidate_identity": {
-              "type": "string",
-              "minLength": 1
-            },
-            "url": {
-              "type": [
-                "string",
-                "null"
-              ]
-            },
-            "observed_at": {
-              "type": [
-                "string",
-                "null"
-              ],
-              "format": "date-time"
-            }
+            "id": {"type": "string", "minLength": 1},
+            "target": {"enum": ["preview", "production", "other"]},
+            "candidate_identity": {"type": "string", "minLength": 1},
+            "url": {"type": ["string", "null"]},
+            "observed_at": {"type": ["string", "null"], "format": "date-time"}
           }
         }
       ]
     },
-    "risks": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      }
-    }
+    "risks": {"type": "array", "items": {"type": "string"}}
   }
 }

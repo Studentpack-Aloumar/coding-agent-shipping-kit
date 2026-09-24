@@ -1,17 +1,15 @@
-# Verify the current candidate
+# Verify candidate
 
-[Home](../README.md) · [All prompts](../PROMPTS.md) · [How to use](../README.md#using-a-prompt)
+[Prompts](../PROMPTS.md) · [Usage](../README.md#using-a-prompt)
 
-**Trigger:** Use before claiming local completion.
+**Use:** Missing/invalidated local evidence.
 
 ```text
-Verify the current candidate against the original acceptance criteria. Inspect the final diff and identify which checks are relevant, including existing repository requirements. Do not assume the implementer's summary is accurate.
+Inspect final diff against original criteria and repository requirements; question implementer claims. Reuse valid results for this candidate/environment. Run missing/invalidated required tests, type/lint/build and behavioral checks.
 
-Inspect existing results for this exact candidate and environment; reuse valid evidence. Run relevant tests, type/lint/build checks and real behavioral checks that are required, missing or invalidated by changes. For a regression test, demonstrate that it detects the original defect where feasible and safe. Run browser assertions against the changed user journey, not just page loading.
+Where safe/feasible, show regression tests detect the original bug. Browser checks must exercise changed journeys.
 
-Tie every result to the candidate and environment. Distinguish new failures, baseline failures, skipped checks and unavailable checks. Do not convert missing evidence into a pass.
-
-Return a criterion-by-criterion result with commands, exit codes, artifacts and remaining gaps. State the highest completion level actually supported; do not publish or deploy.
+Return each criterion's command/method, exit/result, artifact and gap, tied to candidate/environment. Separate new/baseline failures, skips and unavailable checks. Missing evidence cannot pass. State supported completion level. No publication/deployment.
 ```
 
-Related documentation: [R16](../SOURCES.md#r16)
+Sources: [R16](../SOURCES.md#r16)

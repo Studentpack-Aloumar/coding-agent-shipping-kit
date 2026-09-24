@@ -1,27 +1,27 @@
-# Build an exceptional product from an idea
+# Build from idea
 
-[Home](../README.md) · [All prompts](../PROMPTS.md) · [How to use](../README.md#using-a-prompt)
+[Prompts](../PROMPTS.md) · [Usage](../README.md#using-a-prompt)
 
-**Trigger:** Use for an idea without an implementation plan. Scale discovery and review to the product; use the target repository if one exists, otherwise establish an authorized workspace.
+**Use:** Idea without plan; existing or authorized workspace.
 
 ```text
-I have an idea for an app: <describe it in ordinary language>. Own the technical decisions and deliver the complete agreed product, beginning with its smallest useful end-to-end journey. Reuse the scope, constraints and authorization already established.
+Idea: <describe>. Own technical delivery of the agreed product, starting with its smallest useful complete journey. Reuse context/authority; inspect existing work/instructions.
 
-Inspect existing work and instructions. Identify the intended users, important problem, existing alternatives, distinctive advantage and essential journey. Define observable success criteria for usefulness, experience and relevant commercial assumptions. Recommend reuse or not building when justified. Group genuinely missing consequential product questions; do not make me choose frameworks or packages. Make safe assumptions for routine details and ask before expanding product scope.
+Define users, problem, alternatives, advantage, journey and observable usefulness/design/business criteria. Recommend reuse or not building when justified. Group consequential product questions; own routine technical choices. Ask before scope expansion.
 
-Test the assumptions most likely to invalidate the idea before investing heavily. Use labeled prototypes, synthetic data or small working experiments when useful. Clearly separate simulated behavior, technical feasibility and actual user validation. Do not invent customer evidence or contact people without authorization.
+Test invalidating assumptions early with labeled prototypes, synthetic data or working experiments. Distinguish simulation, feasibility and user validation. No invented customers or unauthorized outreach.
 
-Establish a coherent visual and interaction direction using relevant references and the existing design system. Make deliberate choices about workflows, typography, layout, language, motion and accessibility. Reuse reliable components while giving the experience an identity appropriate to its users.
+Choose coherent visual/interaction references; use existing design system and reliable components. Deliberate workflow, typography, layout, language, motion, accessibility.
 
-Build complete journeys in manageable increments, including relevant loading, empty, failure and recovery states. Fix clear defects and usability problems within the adopted ownership boundary; propose new features, workflow or clinical behavior changes for my decision. Preserve decisions and progress across sessions. Give concise updates for meaningful findings, changes of approach and blockers. Call work running only when an identifiable process or task is executing.
+Build complete increments with loading/empty/failure/recovery states. Fix defects within adopted ownership; ask before features, workflow/clinical changes. Preserve decisions/progress. Brief updates; claim running only with an executing task.
 
-Run focused checks and required repository gates. Use the running app's real controls, inspect rendered behavior and relevant viewports, and verify backend effects. For access-controlled features, use separate synthetic users in isolated development data to check the real access path. If app access prevents verification, report that gap. Screenshots, test titles and attractive mock screens alone are not proof the product works.
+Run focused checks and required gates. Exercise real app controls/viewports/backend effects. Verify authenticated access through separate synthetic users in isolated development data. Disclose access gaps; screenshots/test names prove no working journey.
 
-For substantial work, obtain separate critical review when available against the original criteria: usefulness, clarity, coherent design, originality, accessibility, reliability and maintainability. Fix consequential findings, verify improvements and retain the strongest candidate. Avoid endless polishing or complexity without user benefit. A changed brief or candidate invalidates dependent evidence; update it accordingly.
+For substantial work, obtain separate critique when available: usefulness, clarity, coherence, originality, accessibility, reliability, maintainability. Fix, recheck, retain strongest candidate; stop unproductive polishing. Changed brief/candidate invalidates dependent evidence.
 
-Continue through authorized integration and required gates. Resolve blocking baseline failures within the agreed scope rather than hiding them. Inspect automatic release effects before pushing or merging. Prefer a private clickable preview when available, verifying its access controls, owner access and tested revision. Production/public release, new spending, sensitive-data use and destructive actions must remain within applicable authorization. Before risky source edits, record a recoverable checkpoint and identify what it restores. A source checkpoint does not restore databases or external services, and a stated budget is not a provider-enforced cap.
+Complete authorized integration; resolve scoped baseline blockers. Inspect automatic release effects. Prefer private preview; verify privacy, owner access, revision. Production/public release, new costs, sensitive data and destruction require applicable authority. Before risky edits, checkpoint and state recovery limits; source recovery restores no external data, chat budget enforces no billing cap.
 
-Return the result, how I can use the essential journey, actual verification and remaining gaps. Separate implemented quality from customer adoption, retention and commercial evidence. If genuinely blocked, deliver the useful completed portion and one concrete next action. Do not leave promised implementation undone or label a plan, prototype or unexecuted job as a finished product.
+Return result, usable journey, evidence and gaps. Separate build quality from customer/business outcomes. If blocked, deliver completed work plus one next action. No unfinished promises or plans/prototypes labeled finished products.
 ```
 
-Related guidance: [product excellence](../PRODUCT-EXCELLENCE.md), [owner agreement](../templates/INSTRUCTIONS.owner.md), [task contract](../PLAYBOOK.md#5-keep-the-task-contract-short-and-testable) and [completion states](../GATES.md#completion-states). Research: [R33](../SOURCES.md#r33) [R34](../SOURCES.md#r34) [R35](../SOURCES.md#r35) [R36](../SOURCES.md#r36) [R37](../SOURCES.md#r37) [R38](../SOURCES.md#r38) [R39](../SOURCES.md#r39).
+Guidance: [product excellence](../PRODUCT-EXCELLENCE.md), [owner agreement](../templates/INSTRUCTIONS.owner.md), [task contract](../PLAYBOOK.md#5-keep-the-task-contract-short-and-testable) and [completion states](../GATES.md#completion-states). Research: [R33](../SOURCES.md#r33) [R34](../SOURCES.md#r34) [R35](../SOURCES.md#r35) [R36](../SOURCES.md#r36) [R37](../SOURCES.md#r37) [R38](../SOURCES.md#r38) [R39](../SOURCES.md#r39).

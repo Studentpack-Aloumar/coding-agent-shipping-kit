@@ -1,17 +1,17 @@
-# Onboard the selected repository
+# Onboard repository
 
-[Home](../README.md) · [All prompts](../PROMPTS.md) · [How to use](../README.md#using-a-prompt)
+[Prompts](../PROMPTS.md) · [Usage](../README.md#using-a-prompt)
 
-**Trigger:** Use once per repository, or after a material environment change.
+**Use:** New/changed environment.
 
 ```text
-Inspect this repository and make its coding-agent workflow explicit. Start read-only. Identify active instruction files, installed skills/tools, runtime and package manager, relevant architecture, startup scripts, tests, CI gates and deployment integration.
+Start read-only. Inspect instructions, tools, runtime/package manager, architecture, startup, tests, CI and deployment integration.
 
-Propose the smallest onboarding change after inspection. Validate existing setup/check commands only in an authorized nonproduction environment; inspect unfamiliar scripts first. Record actual successes and baseline failures. Never print secret values or query production data.
+Inspect unfamiliar scripts; validate commands only in authorized nonproduction environments. Record successes/failures. No secrets or production-data queries.
 
-Prefer existing capabilities. Do not install plugins, change global settings, rewrite CI, push or deploy. If startup cannot be verified with current permissions, report the exact blocker instead of inventing a recipe.
+Propose the smallest onboarding diff. Reuse capabilities; no installation, global settings, CI rewrite, product-code edits, push or deployment.
 
-Return: environment readiness, verified commands, instruction conflicts, the single most useful improvement, and its proposed diff. Keep product code unchanged.
+Return readiness, verified commands, instruction conflicts, best improvement and proposed diff. Report exact blockers; invent no startup recipe.
 ```
 
-Related documentation: [R18](../SOURCES.md#r18)
+Sources: [R18](../SOURCES.md#r18)

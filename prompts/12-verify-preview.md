@@ -1,17 +1,17 @@
-# Verify the deployed preview
+# Verify preview
 
-[Home](../README.md) · [All prompts](../PROMPTS.md) · [How to use](../README.md#using-a-prompt)
+[Prompts](../PROMPTS.md) · [Usage](../README.md#using-a-prompt)
 
-**Trigger:** Use after preview deployment is authorized and target identity is known.
+**Use:** Authorized, identified preview.
 
 ```text
-Verify the agreed change in its actual preview environment. Confirm the account, existing project, exact revision, deployment ID and preview-data isolation before any write. Reuse the matching deployment from the existing Git integration when present.
+Before writes, confirm account, project/history, revision, deployment ID and data isolation. Reuse matching Git deployment.
 
-For Vercel, check project history: the first deployment of a new project is production. Do not assume a command without --prod is preview-safe. Do not provision a new project under preview-only authorization.
+Vercel's first project deployment is production; omitting --prod does not guarantee preview. Preview-only authority permits no new project provisioning.
 
-Exercise the changed journey with synthetic data using the existing browser tool. Inspect relevant console, network and runtime logs. Capture evidence and confirm server-side effects where required.
+Exercise changed journey with synthetic data and existing browser. Inspect console/network/runtime logs; verify backend effects, capture evidence.
 
-Return deployment identity, tested cases, failures and limitations. If fixes change the candidate, revalidate the new deployment. Do not promote, merge or alter production configuration.
+Return deployment identity, cases, failures, limitations. Candidate edits require new-deployment validation. No promotion, merge or production configuration changes.
 ```
 
-Related documentation: [R23](../SOURCES.md#r23) [R15](../SOURCES.md#r15)
+Sources: [R23](../SOURCES.md#r23) [R15](../SOURCES.md#r15)

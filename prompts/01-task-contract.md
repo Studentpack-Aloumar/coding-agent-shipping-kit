@@ -1,17 +1,15 @@
-# Define the task contract
+# Define task contract
 
-[Home](../README.md) · [All prompts](../PROMPTS.md) · [How to use](../README.md#using-a-prompt)
+[Prompts](../PROMPTS.md) · [Usage](../README.md#using-a-prompt)
 
-**Trigger:** Use when the desired outcome or scope is genuinely unclear.
+**Use:** Unclear outcome/scope.
 
 ```text
-Turn my current request into a small, testable change contract. Inspect the relevant existing behavior before deciding what must change. Reuse context I have already supplied.
+Inspect relevant behavior; reuse supplied context. Define outcome, scope, exclusions, acceptance/error criteria and irreversible consequences.
 
-State the user-visible outcome, in-scope behavior, exclusions, acceptance criteria, important error states and any irreversible consequences. Separate product decisions from technical implementation choices. Make routine technical choices yourself within the existing architecture.
+Own routine technical choices within existing architecture. Group blocking product questions; label safe assumptions. Add no conventional extra features. Implement only when scope is clear.
 
-Ask all genuinely blocking scope questions together; do not ask me to choose libraries unnecessarily. Clearly label safe assumptions. Do not add features because they are conventional, and do not start implementation until the scope is sufficiently clear.
-
-Return a compact contract that a separate reviewer could use without reading this conversation.
+Return a compact contract usable without this conversation.
 ```
 
-Related documentation: [R01](../SOURCES.md#r01)
+Sources: [R01](../SOURCES.md#r01)

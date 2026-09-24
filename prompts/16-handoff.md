@@ -1,17 +1,15 @@
-# Hand off a task without losing state
+# Hand off
 
-[Home](../README.md) · [All prompts](../PROMPTS.md) · [How to use](../README.md#using-a-prompt)
+[Prompts](../PROMPTS.md) · [Usage](../README.md#using-a-prompt)
 
-**Trigger:** Use at a real handoff or context boundary, not after every small edit.
+**Use:** Real session/context boundary.
 
 ```text
-Create a compact factual handoff for the next coding-agent session. Inspect current repository state instead of relying only on conversation memory.
+Inspect current repository state. Record outcome/exclusions, workspace/branch, base/head or uncommitted diff identity, changed files, decisions, actual checks/results/artifacts, failures, unattempted work and next executable action.
 
-Record the agreed outcome and exclusions, workspace/branch, base and current revision or uncommitted diff identity, changed files, decisions, actual test commands/results and artifact paths. Include unresolved failures, what has not been attempted, and the next smallest executable action.
+Carry permissions/prohibitions and in-progress operations that must not be duplicated. No secrets/records; reference authorized storage.
 
-State which external actions are authorized and which remain prohibited or unapproved. Identify any in-progress operation that must not be duplicated. Exclude secrets and sensitive records; reference approved storage locations rather than copying credentials.
-
-Save the handoff only to the authorized project location, or return it as text. Do not invent persisted files, background work or completed checks. Do not commit or push merely to create the handoff.
+Save only within authorized project location, or return text. Invent no files, background work or checks. No commit/push merely for handoff.
 ```
 
-Related documentation: [R32](../SOURCES.md#r32)
+Sources: [R32](../SOURCES.md#r32)

@@ -1,17 +1,15 @@
-# Diagnose and fix a failure
+# Debug failure
 
-[Home](../README.md) · [All prompts](../PROMPTS.md) · [How to use](../README.md#using-a-prompt)
+[Prompts](../PROMPTS.md) · [Usage](../README.md#using-a-prompt)
 
-**Trigger:** Use when a check or observed behavior fails.
+**Use:** Observed failure.
 
 ```text
-Investigate the reported failure before patching. Use systematic-debugging when that skill is active. Reproduce the symptom, inspect relevant logs and recent changes, compare a working path, and identify the smallest testable hypothesis.
+Reproduce before patching. Inspect logs/recent changes; compare working path. Use systematic-debugging when active. Test one minimal hypothesis at a time; record exclusions. Sanitize instrumentation; expose no secrets/records.
 
-Instrument only what is needed, with sanitized values. Never dump environment files, tokens or sensitive records. Test one hypothesis at a time and record what the evidence rules out.
+Fix root cause with scoped changes; add useful regression coverage. Rerun reproduction and affected checks. After two failed approaches, reassess using new evidence; no blind edits.
 
-Fix the root cause with the smallest scoped change, add a focused regression test when it meaningfully protects the behavior, and rerun the original reproduction plus affected checks. If two approaches fail, reassess the diagnosis and summarize new evidence before continuing; do not repeat blind edits.
-
-Return the confirmed cause or remaining uncertainty, the fix, before/after evidence and any blocker. Do not claim the failure is impossible in all conditions.
+Return cause/uncertainty, fix, before/after evidence and blocker. Claim only observed coverage.
 ```
 
-Related documentation: [R09](../SOURCES.md#r09)
+Sources: [R09](../SOURCES.md#r09)

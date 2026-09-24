@@ -1,86 +1,80 @@
 # Shipping playbook
 
-[Home](README.md) · [Prompts](PROMPTS.md) · [Setup](SETUP.md) · [Evidence](GATES.md) · [Sources](SOURCES.md)
+[Home](README.md) · [Prompts](PROMPTS.md) · [Resources](RESOURCES.md) · [Gates](GATES.md)
 
-**Recommendation:** optimize accepted, working changes—not generated code, agent count or number of installed skills.
+Recommendations; no comparative benchmark. Optimize accepted, working changes.
 
 ## 1. Use a small default loop
-For an ordinary scoped change: **understand → implement → verify → deliver evidence**. Planning, external research, specialist review and deployment are conditional branches, not mandatory ceremonies. Claude's documentation explicitly distinguishes tasks that benefit from planning from simple edits; Codex recommends clear outcomes and task context. [R03](SOURCES.md#r03) [R01](SOURCES.md#r01)
 
-Use the coding agent that already has a functioning repository environment. This research does not establish that switching models or clients would improve your results. My recommended first intervention is a reliable startup recipe and clear acceptance criteria; compare tool additions afterward.
+**Understand → implement → verify → deliver evidence.** Add planning, research, specialist review or deployment when warranted. Start with your working agent, tested startup recipe and clear criteria. [R01](SOURCES.md#r01) [R03](SOURCES.md#r03)
 
 ## For a first-time builder
 
-When a user describes an idea rather than a specific code change, use the [build-from-idea prompt](prompts/18-build-from-idea.md). Apply [product excellence](PRODUCT-EXCELLENCE.md): establish the user problem, alternatives, distinctive benefit and essential journey; test the riskiest assumptions, choose a coherent design direction and deliver complete increments. Consider user, design and commercial success separately. Capture information/spending constraints, then make technical decisions in the selected workspace. A working version requires executed implementation and tested behavior. A saved brief, plan, or screen showing progress steps without an executing job is not a running build.
+Use [18 · Build](prompts/18-build-from-idea.md) and [product excellence](PRODUCT-EXCELLENCE.md): user, problem, alternatives, advantage, essential journey. Test risky assumptions; deliver complete increments. Separate user, design and commercial evidence.
 
-Keep status understandable: queued work is not running work; a preview must open for the owner and point to the tested revision; a changed brief can invalidate older green evidence. For risky source edits, make recovery practical. A source checkpoint does not restore database records, external resources or provider charges. A budget requested in chat is a planning limit unless the provider enforces it.
+Running work needs an executing job. Preview must open for the owner and match the tested revision. Changed briefs invalidate dependent evidence. Source checkpoints restore no database, external resource or charge; chat budgets enforce no provider cap.
 
 ## 2. Match the resource to the decision
-The choices and gates below are recommendations. The linked resources establish capabilities, not comparative superiority. Reuse the tools already available. A named optional tool is not a prerequisite when an existing capability can meet the requirement.
 
-| Development stage | Recommended resource | Trigger / when to skip | Evidence before proceeding |
-|---|---|---|---|
-| Orient and start | Native file search, shell and existing setup scripts; Copilot setup steps only for Copilot cloud | New repo or changed environment; otherwise reuse the verified recipe | Actual runtime, commands, relevant paths and baseline status |
-| Define the change | Native agent conversation; a short task contract | Ambiguous outcome, users or scope; skip when already explicit | Observable acceptance conditions and exclusions |
-| Resolve uncertainty | Existing search/browser; Exa or Context7 when available and useful | Material API or architecture uncertainty; skip settled facts | Applicable version, source and implementation consequence |
-| Plan | Native plan mode; existing Superpowers planning when that framework is deliberately in use | Multi-system, irreversible or poorly understood change | Small ordered plan, dependencies and tests |
-| Implement | Native editor, language navigation and existing test tools | Every code change; do not add a generic implementation skill by default | Scoped diff that meets the contract |
-| Apply domain expertise | Vercel React/UI skills, shadcn or Supabase skills | Only the matching framework or subsystem | Actual relevant rule applied, not an unrelated rewrite |
-| Verify and debug | Existing test suite; Playwright; native running-app checks; systematic-debugging for a failure | Verification always proportional to impact; debugging only when needed | Reproduction and relevant tests, commands, results, artifacts |
-| Review and prepare PR | Fresh native review; GitHub CLI/MCP; gh-fix-ci for its specific scope | Independent review for substantive/risky changes | Actionable findings resolved; current candidate checks recorded |
-| Validate preview | Existing deployment integration; Vercel CLI/MCP and browser | Deployed web behavior needs validation | Exact deployment, revision, journey and log findings |
-| Release and observe | Existing release process and observability | Only an explicitly authorized production target | Release evidence, rollback compatibility and bounded post-release checks |
+| Need | Resource / evidence |
+|---|---|
+| Orient | Native search/setup; actual paths, runtime, commands, baseline |
+| Clarify | Short contract; observable outcome and exclusions |
+| Research | Existing browser/search, optional Exa/Context7; version, source, consequence |
+| Plan | Native planning; dependencies, risky steps, tests |
+| Implement | Existing editor/components; complete scoped diff |
+| Specialize | Relevant React, shadcn or database guidance only |
+| Verify/debug | Existing tests/browser; reproduction, results, artifacts |
+| Review/PR | Fresh review, existing GitHub access; findings resolved, candidate checks |
+| Preview | Existing deployment/browser; revision, deployment, journey, logs |
+| Release | Authorized process; recovery compatibility, bounded observation |
 
-Resource details: [catalogue](RESOURCES.md). Prompt equivalents: [prompt index](PROMPTS.md).
+Use available alternatives when named tools are missing. Add capabilities only for a concrete gap.
 
 ## 3. Separate instructions, skills, tools and enforcement
-A task prompt specifies this change. A repository instruction file stores the small set of durable facts the agent needs repeatedly. A skill packages a reusable method with optional supporting material. A tool gives the agent an execution or retrieval capability. A plugin distributes one or more capabilities. A configured permission, test or CI gate constrains or checks actual actions. These layers are complementary, not interchangeable. [R01](SOURCES.md#r01) [R02](SOURCES.md#r02) [R29](SOURCES.md#r29) [R06](SOURCES.md#r06)
 
-My recommended repository guidance contains verified startup/check commands, a short navigation map, material constraints and the meaning of completion. Put long procedures outside the always-loaded file. Do not let automatic memories or generated guidance silently override team policy. The [owner agreement](templates/INSTRUCTIONS.owner.md) is an opt-in personal engineering policy; explicitly adopt it for the intended project and reconcile it with repository requirements. Its bounded integration authority does not override a request limited to review or planning.
+Prompt: current task. Repository instructions: durable facts. Skill: reusable method. Tool: capability. Plugin: distribution. Permissions/tests/CI: enforcement. [R02](SOURCES.md#r02) [R06](SOURCES.md#r06) [R29](SOURCES.md#r29)
 
-Avoid the opposite mistake: assuming all durable documentation is harmful. Vercel's published Next.js experiment found useful results from a compact documentation index in AGENTS.md. That is evidence for testing retrieval and activation on your workload, not proof that one instruction style always wins. [R28](SOURCES.md#r28)
+Keep persistent instructions short: map, verified commands, constraints, completion. Link long procedures. Memories cannot silently override policy. Explicitly adopt the [owner agreement](templates/INSTRUCTIONS.owner.md); narrower task scope still controls. Vercel's compact documentation-index result supports workload-specific evaluation, not universal superiority. [R28](SOURCES.md#r28)
 
 ## 4. Establish a reproducible environment before adding helpers
-Record the runtime and package-manager versions from the repository, the lockfile, service requirements, environment-variable **names**, and actual successful install/start/test commands. Note cold-start behavior, known baseline failures and whether a browser or database is available. Never substitute a generic npm command for a different repository's real scripts.
 
-For Copilot cloud, the documented setup file is `.github/workflows/copilot-setup-steps.yml`. A setup failure can still leave the agent running in a partially configured environment; the task must not treat that as a healthy baseline. Other agents should use their own environment mechanism, not receive a Copilot-only workflow by default. [R18](SOURCES.md#r18)
+Record runtime/package-manager versions, lockfile, services, environment-variable names, successful install/start/check commands, cold starts and baseline failures. Never invent generic commands.
 
-A local worktree isolates file changes, not every database, port or external account used by those files. My recommendation for parallel work is one write owner per worktree, separate service/test resources where required, and one integration owner. Delegate independent inspection before parallelizing overlapping implementation. Claude documents worktree workflows and isolated research contexts. [R32](SOURCES.md#r32)
+Copilot cloud: `.github/workflows/copilot-setup-steps.yml`; failed setup can leave the agent running partially configured. Other clients use their own setup. [R18](SOURCES.md#r18)
+
+Worktrees isolate files, not databases/ports/accounts. For parallel work: one writer per worktree, isolated shared resources, one integration owner. [R32](SOURCES.md#r32)
 
 ## 5. Keep the task contract short and testable
-Use four fields: **outcome, context, constraints, completion evidence**. This follows Codex's recommended prompt structure, while leaving technical implementation to the agent. [R01](SOURCES.md#r01)
 
-Example contract, written for this kit:
+**Outcome, context, constraints, completion evidence.** [R01](SOURCES.md#r01)
 
-> Add cancellation to the existing import flow. Cancel must stop further processing, leave existing records intact and let the user start another import. Reuse the current UI and worker architecture. Cover cancellation during processing and immediately before completion. Show the passing regression tests and exercise the flow in the running app. No production deployment is authorized.
+> Add import cancellation: stop processing, preserve records, allow restart. Reuse current UI/worker. Test mid-processing and pre-completion cancellation; exercise the app. No production deployment.
 
-Do not require a plan file, new abstraction, exhaustive research or multiple agents for that change unless the implementation actually warrants them. Conversely, a schema migration or authorization boundary should not be rushed merely because its code diff is small. Under the adopted owner agreement, fix clear adjacent defects that preserve product intent and resolve baseline failures blocking required gates. Continue while making useful progress; ask when new product scope, cost, risk or a materially different approach requires a decision.
+Scale process to risk. Under adopted ownership, fix adjacent defects preserving intent and blocking baseline failures. Ask before consequential scope/cost/risk/approach changes.
 
 ## 6. Treat UI verification as more than a screenshot
-For a changed user journey, my recommended minimum is the relevant success case, loading/empty/error states, keyboard access and an appropriate narrow viewport. Check console and network failures. Confirm server-side effects where the feature requires them. Preserve a durable regression test for repeatable behavior; an exploratory browser session alone is not that test.
 
-Playwright distinguishes its coding-agent CLI from MCP-based exploratory workflows. Its test guidance emphasizes user-visible behavior and isolated tests. Prefer the existing browser route when it works; add another one only for a concrete capability gap. [R15](SOURCES.md#r15) [R16](SOURCES.md#r16)
+Exercise success, relevant loading/empty/error states, keyboard access and narrow viewports. Inspect console/network; verify required server effects. Keep useful repeatable regressions in the suite. Reuse existing browser tooling. [R15](SOURCES.md#r15) [R16](SOURCES.md#r16)
 
 ## 7. Make review independent in a useful way
-My recommended reviewer receives the original contract, relevant policy, base and head revisions, the diff and access to validation artifacts—not a persuasive explanation of why the implementation is correct. Request evidenced bugs and explicit uncertainty, not a quota of findings. The reviewer is read-only; the implementer makes confirmed corrections and reruns affected checks.
 
-A fresh context reduces shared narrative but does not prove statistical independence or correctness. Tests and review can still miss the same requirement. Keep acceptance criteria separate from the implementation, and report review limitations. For substantial product work, also review the running experience against usefulness, clarity, coherent design, originality, accessibility and maintainability. Retain the strongest candidate and stop unproductive iteration; fresh-agent opinions do not establish real-user or business outcomes. [R37](SOURCES.md#r37) Claude's best-practice guidance also warns against soliciting speculative overengineering. [R03](SOURCES.md#r03)
+Read-only reviewer: original contract, policy, base/head, diff, artifacts and running product. Require evidenced findings, explicit uncertainty, no quota. Implementer fixes; reruns affected checks.
+
+Fresh context guarantees no correctness. For substantial products, assess usefulness, clarity, coherence, originality, accessibility, reliability and maintainability. Retain strongest candidate; stop unproductive polishing. Agent review proves no customer demand. [R03](SOURCES.md#r03) [R37](SOURCES.md#r37)
 
 ## 8. Optimize CI without weakening the gate
-During iteration, run focused checks. At the candidate boundary, run the checks the repository actually requires. Avoid launching several overlapping full suites per edit; reuse existing CI results for the same candidate and environment where valid. A changed revision or dependency invalidates evidence as appropriate.
 
-My proposed cost controls: cancel obsolete PR-validation runs, cache dependencies safely, avoid duplicate builds unless targets differ, retain failure artifacts and give each check an owner. Keep release/migration jobs out of casual cancellation policies. GitHub documents concurrency controls. Its required-check rules also mean a path-filtered skipped workflow can leave a required check waiting; keep an always-reporting gate and handle merge-queue events where used. [R25](SOURCES.md#r25) [R26](SOURCES.md#r26)
+Focused checks during iteration; required checks at candidate boundary. Reuse valid evidence; rerun invalidated checks. Missing/skipped/stale checks cannot pass. Preserve assertions and branch protection.
 
-An absent, skipped or stale check is not a pass. Do not disable branch protection, remove failing assertions or weaken policy to improve apparent throughput.
+Cancel obsolete validation, cache safely, retain failure artifacts, avoid duplicate builds. Protect release/migration jobs from casual cancellation. Required gates must report through path filters and merge queues. [R25](SOURCES.md#r25) [R26](SOURCES.md#r26)
 
 ## 9. Make the release boundary explicit
-A build, a preview URL and a production deployment are different achievements. Before any deployment, confirm the account, existing project, revision, target environment, data isolation and authorization. Before a push or merge, inspect whether that action automatically deploys or releases; production approval must cover those effects too. Vercel documents an important exception: a new project's first deployment is production. A plain CLI invocation is therefore not an unconditional preview guarantee. [R23](SOURCES.md#r23)
 
-Reuse authorization already supplied for the same action, artifact and target. Use the current deployment from the Git integration rather than starting an unnecessary duplicate. Record an immutable deployment identifier, not only a moving branch alias. Production approval should identify the artifact and material migrations/configuration changes. Reassess approval when the release changes materially.
+Confirm account, project/history, revision, environment, data isolation, authorization and automatic push/merge effects. Vercel's first project deployment is production, even without `--prod`. [R23](SOURCES.md#r23)
 
-Application rollback cannot be assumed to undo external database, API or content-system changes. Review compatibility and recovery separately. Observe the actual shipped revision for a stated period and report only what was checked; a single successful request is not evidence of universal health. [R24](SOURCES.md#r24)
+Reuse matching deployments and existing applicable approval. Record immutable deployment ID; material artifact/configuration/migration changes require reassessment. Application rollback restores no external data by itself. Verify recovery compatibility and shipped behavior over a stated interval. [R24](SOURCES.md#r24)
 
 ## 10. Decide what deserves to become a skill
-Start from a repeatedly useful procedure. Test whether the agent discovers it for matching tasks, avoids it for unrelated tasks, and produces the intended evidence. Package deterministic scripts only where they genuinely remove unreliable repeated work. Do not create a skill solely to give an ordinary prompt a more impressive name. [R02](SOURCES.md#r02) [R29](SOURCES.md#r29)
 
-Measure before expanding: completion rate, elapsed time, human corrections, tokens/tool calls and total cost including failures. The evaluation protocol in this kit is a proposed local experiment, inspired by OpenAI's skill-evaluation guidance—not a benchmark already run. [R27](SOURCES.md#r27)
+Package repeatedly useful methods; script deterministic repetitive work. Verify appropriate discovery, non-activation on unrelated tasks and completed behavior. Measure completion, elapsed time, human corrections, tool/model/CI cost including failures. Use the [evaluation protocol](EVALUATION.md). [R02](SOURCES.md#r02) [R27](SOURCES.md#r27)

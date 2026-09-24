@@ -1,17 +1,15 @@
-# Evaluate one tool or skill addition
+# Evaluate addition
 
-[Home](../README.md) · [All prompts](../PROMPTS.md) · [How to use](../README.md#using-a-prompt)
+[Prompts](../PROMPTS.md) · [Usage](../README.md#using-a-prompt)
 
-**Trigger:** Use before claiming a setup change improves shipping.
+**Use:** Compare one setup change.
 
 ```text
-Evaluate one proposed tool, skill or prompt change against the current setup using the agreed representative nonproduction tasks. Change only that element; hold the starting code, acceptance criteria, environment, model settings and budget constant as far as possible.
+Compare one tool/skill/prompt change against baseline on agreed representative nonproduction tasks. Hold code, criteria, environment, model settings and budget constant where possible.
 
-Use isolated runs without shared solution memory. Record all attempts, including failures, setup problems and budget exhaustion. Measure accepted outcomes, total elapsed time, human corrections and actual model/tool/CI usage. Unknown cost is unknown, not zero.
+Isolate runs/solution memory. Record every attempt, failures, setup issues and exhaustion. Measure accepted outcomes, elapsed time, human corrections and actual model/tool/CI usage; unknown cost stays unknown.
 
-Check both skill activation and completed behavior, including unrelated tasks where it should not activate. Preserve safety and quality thresholds.
-
-Return observed results, limitations and an adoption recommendation supported by those results. If execution is not authorized or possible, provide the experiment specification and explicitly state that no benchmark was run.
+Check appropriate activation and unrelated-task non-activation. Preserve quality/safety thresholds. Return results, limitations and supported adoption decision. If unavailable/unauthorized, return experiment specification explicitly marked not run.
 ```
 
-Related documentation: [R27](../SOURCES.md#r27) [R28](../SOURCES.md#r28)
+Sources: [R27](../SOURCES.md#r27) [R28](../SOURCES.md#r28)

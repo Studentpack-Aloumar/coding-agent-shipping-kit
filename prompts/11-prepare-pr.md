@@ -1,17 +1,19 @@
-# Prepare one reviewable PR
+# Prepare PR
 
-[Home](../README.md) · [All prompts](../PROMPTS.md) · [How to use](../README.md#using-a-prompt)
+[Prompts](../PROMPTS.md) · [Usage](../README.md#using-a-prompt)
 
-**Trigger:** Use when local work is ready for an authorized publication.
+**Use:** Authorized publication.
 
 ```text
-Prepare a focused PR for the agreed change. Inspect the base/head diff, final acceptance evidence and current check results. Confirm that unrelated changes, secrets, generated clutter and unintended lockfile churn are absent.
+Inspect base/head diff, acceptance evidence and current checks. Exclude unrelated changes, secrets, generated clutter and unintended lockfile churn.
 
-Write a concise PR description covering changed behavior, implementation rationale, tests actually run, untested gaps, configuration/migration implications and residual risks. Link evidence to the current candidate.
+Describe behavior, rationale, actual tests, gaps, configuration/migrations and risks; bind evidence to candidate.
 
-Reuse existing authorization for branch publication and PR creation. Before pushing, inspect the source branch, target repository and automation for deployment or release effects; those effects must also be authorized. Use the intended repository and base branch when covered. Otherwise prepare the description and report what remains unpublished. For a PR-preparation-only request, stop at the reviewable PR. When this prompt is a step in an implementation task with adopted integration authority, continue through required review/check gates and merge if all consequences are covered. Never change branch protection or trigger unnecessary workflows.
+Reuse publication/PR authority. Confirm repository, source/base branches and automatic release effects before pushing; all effects need coverage. Otherwise prepare description and identify unpublished work.
 
-Return the PR URL only if it was actually created, together with the candidate revision and required-check state. Readiness for review is not production readiness.
+PR-only task: stop at reviewable PR. Adopted implementation integration: continue required checks/review and merge only when authorized. Preserve branch protection; avoid unnecessary workflows.
+
+Return actual PR URL, candidate and required-check state. Review readiness grants no production readiness.
 ```
 
-Related documentation: [R21](../SOURCES.md#r21) [R26](../SOURCES.md#r26)
+Sources: [R21](../SOURCES.md#r21) [R26](../SOURCES.md#r26)

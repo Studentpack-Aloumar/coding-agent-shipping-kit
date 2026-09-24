@@ -1,17 +1,19 @@
-# Implement the agreed change
+# Implement change
 
-[Home](../README.md) · [All prompts](../PROMPTS.md) · [How to use](../README.md#using-a-prompt)
+[Prompts](../PROMPTS.md) · [Usage](../README.md#using-a-prompt)
 
-**Trigger:** Default implementation prompt after a concrete request.
+**Use:** Concrete request.
 
 ```text
-Implement the currently agreed behavior completely in the selected workspace. Read active repository instructions and the relevant execution path. Use the existing architecture, runtime, package manager and component patterns.
+Read active instructions and execution path. Complete agreed behavior using existing architecture, runtime, package manager and components. Preserve others' work. Plan only for meaningful uncertainty.
 
-For a small clear change, proceed without planning ceremony. For substantial uncertainty, resolve it before broad edits. Match verification to the change. Add or update behavioral regression tests when they protect changed behavior; for a bug, establish the failing reproduction where feasible. Do not add tests that merely restate a static edit. Preserve other people's changes. Under the adopted owner agreement, fix clear adjacent defects and usability problems that preserve product intent, and resolve existing failures blocking required integration gates. Ask before new features, workflow or clinical behavior changes, or major architectural shifts; avoid unrelated rewrites.
+Under adopted owner agreement, fix adjacent defects preserving intent and baseline failures blocking gates. Ask before new features, workflow/clinical changes or major architecture shifts. Avoid unrelated rewrites.
 
-Run focused checks while iterating, then the required candidate checks. For changed user-facing flows, inspect the rendered result and complete the affected journey using real controls; disclose any app-access limitation. Never weaken checks or hide failures to finish.
+Use meaningful regression tests; reproduce bugs where feasible. Focus checks during iteration; satisfy required candidate gates. Exercise changed UI through real controls; disclose access gaps. Never weaken checks or hide failures.
 
-Continue through implementation, verification and authorized integration. Under an explicitly adopted owner agreement this includes commit, push, PR when appropriate and merge after required review/check gates, unless this task has a narrower boundary. Inspect automatic release effects before pushing or merging. Reuse permission already given for the same action and target. Publication, new paid resources and production actions must be covered explicitly; request approval only for a missing boundary after completing independent work. Return the exact candidate, evidence, changed behavior and unresolved risks.
+Finish authorized integration. Adopted owner agreement covers commit/push/PR/merge after required review/checks unless task scope is narrower. Inspect automatic release effects; production, publication and new costs need applicable authority. Reuse approvals; prepare concrete work before requesting missing approval.
+
+Return candidate, changed behavior, actual evidence and unresolved risks.
 ```
 
-Related documentation: [R01](../SOURCES.md#r01)
+Sources: [R01](../SOURCES.md#r01)

@@ -2,7 +2,7 @@
   "name": "coding-agent-shipping-kit",
   "version": "1.1.1",
   "documentation_checked_on": "2026-09-24",
-  "scope": "Source-backed reference, original prompts and inert templates; not a repository installation.",
+  "scope": "Sourced reference, original prompts, inactive templates; no target-repository installation.",
   "runtime_tested_on_user_repositories": false,
   "benchmarked": false,
   "external_writes_performed": true,
@@ -12,7 +12,7 @@
       "title": "OpenAI — Codex best practices",
       "url": "https://developers.openai.com/codex/learn/best-practices",
       "evidence_kind": "Vendor documentation",
-      "note": "Task context, reusable instructions, selective planning and review. Redirects to ChatGPT Learn.",
+      "note": "Task context, instructions, selective planning/review; redirects to ChatGPT Learn.",
       "checked_on": "2026-09-24"
     },
     {
@@ -20,7 +20,7 @@
       "title": "OpenAI — Agent Skills",
       "url": "https://developers.openai.com/codex/skills",
       "evidence_kind": "Vendor documentation",
-      "note": "Codex discovery paths, explicit invocation and skill installer. Redirects to ChatGPT Learn.",
+      "note": "Discovery, invocation, installer; redirects to ChatGPT Learn.",
       "checked_on": "2026-09-24"
     },
     {
@@ -28,7 +28,7 @@
       "title": "Anthropic — Claude Code best practices",
       "url": "https://code.claude.com/docs/en/best-practices",
       "evidence_kind": "Vendor documentation",
-      "note": "Conditional planning, context discipline and verifiable outcomes.",
+      "note": "Conditional planning, context discipline, verifiable outcomes.",
       "checked_on": "2026-09-24"
     },
     {
@@ -36,7 +36,7 @@
       "title": "Anthropic — Extend Claude with skills",
       "url": "https://code.claude.com/docs/en/skills",
       "evidence_kind": "Vendor documentation",
-      "note": "Bundled run/verify/review skills, custom skill discovery and overrides.",
+      "note": "Bundled run/verify/review, discovery, overrides.",
       "checked_on": "2026-09-24"
     },
     {
@@ -44,7 +44,7 @@
       "title": "Anthropic — Project memory and instructions",
       "url": "https://code.claude.com/docs/en/memory",
       "evidence_kind": "Vendor documentation",
-      "note": "Conditional AGENTS.md support and explicit CLAUDE.md imports.",
+      "note": "Conditional AGENTS.md support; CLAUDE.md imports.",
       "checked_on": "2026-09-24"
     },
     {
@@ -52,7 +52,7 @@
       "title": "Anthropic — Hooks guide",
       "url": "https://code.claude.com/docs/en/hooks-guide",
       "evidence_kind": "Vendor documentation",
-      "note": "Lifecycle hooks; distinguish executable checks from prose guidance.",
+      "note": "Executable lifecycle checks; prose alone enforces nothing.",
       "checked_on": "2026-09-24"
     },
     {
@@ -60,7 +60,7 @@
       "title": "Exa — MCP documentation",
       "url": "https://exa.ai/docs/reference/exa-mcp",
       "evidence_kind": "Vendor documentation",
-      "note": "Public-source discovery. Actual tool names depend on integration.",
+      "note": "Public-source discovery; integration-specific tool names.",
       "checked_on": "2026-09-24"
     },
     {
@@ -68,7 +68,7 @@
       "title": "Upstash — Context7",
       "url": "https://github.com/upstash/context7",
       "evidence_kind": "Maintainer repository",
-      "note": "Version-aware documentation via CLI plus skills or MCP; inspect source coverage.",
+      "note": "Versioned docs via CLI/skills or MCP; verify coverage.",
       "checked_on": "2026-09-24"
     },
     {
@@ -76,7 +76,7 @@
       "title": "Superpowers — Maintainer repository",
       "url": "https://github.com/obra/superpowers",
       "evidence_kind": "Maintainer repository",
-      "note": "Opinionated lifecycle skills, supported agent integrations and installation.",
+      "note": "Opinionated lifecycle, integrations, installation.",
       "checked_on": "2026-09-24"
     },
     {
@@ -84,7 +84,7 @@
       "title": "Vercel — React skill source",
       "url": "https://github.com/vercel-labs/agent-skills/blob/main/skills/react-best-practices/SKILL.md",
       "evidence_kind": "Maintainer skill source",
-      "note": "Declared skill name is vercel-react-best-practices; folder name differs.",
+      "note": "Skill: vercel-react-best-practices; directory name differs.",
       "checked_on": "2026-09-24"
     },
     {
@@ -92,7 +92,7 @@
       "title": "Vercel — Agent skills collection",
       "url": "https://github.com/vercel-labs/agent-skills",
       "evidence_kind": "Maintainer repository",
-      "note": "Includes web-design-guidelines; consult actual selected skill.",
+      "note": "Includes web-design-guidelines; inspect selected skill.",
       "checked_on": "2026-09-24"
     },
     {
@@ -100,7 +100,7 @@
       "title": "shadcn — Agent skills",
       "url": "https://ui.shadcn.com/docs/skills",
       "evidence_kind": "Vendor documentation",
-      "note": "Project-aware shadcn component and configuration guidance.",
+      "note": "Project-aware components/configuration.",
       "checked_on": "2026-09-24"
     },
     {
@@ -108,7 +108,7 @@
       "title": "Supabase — Agent skills",
       "url": "https://github.com/supabase/agent-skills",
       "evidence_kind": "Maintainer repository",
-      "note": "Supabase product guidance and supabase-postgres-best-practices.",
+      "note": "Product guidance and supabase-postgres-best-practices.",
       "checked_on": "2026-09-24"
     },
     {
@@ -116,7 +116,7 @@
       "title": "Supabase — MCP",
       "url": "https://supabase.com/docs/guides/ai-tools/mcp",
       "evidence_kind": "Vendor documentation",
-      "note": "Development-only data access guidance and MCP precautions.",
+      "note": "Development-only data access; MCP precautions.",
       "checked_on": "2026-09-24"
     },
     {
@@ -124,7 +124,7 @@
       "title": "Microsoft Playwright — Coding agents",
       "url": "https://playwright.dev/docs/getting-started-cli",
       "evidence_kind": "Vendor documentation",
-      "note": "CLI versus MCP use cases and CLI skill installation.",
+      "note": "CLI/MCP use cases; CLI skill installation.",
       "checked_on": "2026-09-24"
     },
     {
@@ -132,7 +132,7 @@
       "title": "Microsoft Playwright — Test best practices",
       "url": "https://playwright.dev/docs/best-practices",
       "evidence_kind": "Vendor documentation",
-      "note": "User-visible tests, isolation, resilient locators and failure diagnosis.",
+      "note": "User-visible tests, isolation, locators, diagnosis.",
       "checked_on": "2026-09-24"
     },
     {
@@ -140,7 +140,7 @@
       "title": "GitHub — About agent skills",
       "url": "https://docs.github.com/en/copilot/concepts/agents/about-agent-skills",
       "evidence_kind": "Vendor documentation",
-      "note": "Supported Copilot surfaces and skill discovery directories.",
+      "note": "Supported surfaces and discovery paths.",
       "checked_on": "2026-09-24"
     },
     {
@@ -148,7 +148,7 @@
       "title": "GitHub — Copilot cloud development environment",
       "url": "https://docs.github.com/en/copilot/how-tos/copilot-on-github/customize-copilot/customize-cloud-agent/customize-the-agent-environment",
       "evidence_kind": "Vendor documentation",
-      "note": "copilot-setup-steps.yml and behavior when setup fails.",
+      "note": "copilot-setup-steps.yml; failed-setup behavior.",
       "checked_on": "2026-09-24"
     },
     {
@@ -156,7 +156,7 @@
       "title": "GitHub — Configure repository MCP servers",
       "url": "https://docs.github.com/en/copilot/how-tos/copilot-on-github/customize-copilot/configure-mcp-servers",
       "evidence_kind": "Vendor documentation",
-      "note": "Cloud/review OAuth limitation, autonomous tool use and tool allowlists.",
+      "note": "Cloud/review OAuth limitation, autonomous tools, allowlists.",
       "checked_on": "2026-09-24"
     },
     {
@@ -164,7 +164,7 @@
       "title": "OpenAI — gh-fix-ci skill",
       "url": "https://github.com/openai/skills/blob/main/skills/.curated/gh-fix-ci/SKILL.md",
       "evidence_kind": "Maintainer skill source",
-      "note": "GitHub Actions diagnosis with gh; approval before implementation.",
+      "note": "GitHub Actions via gh; fix-plan approval.",
       "checked_on": "2026-09-24"
     },
     {
@@ -172,7 +172,7 @@
       "title": "GitHub — Official MCP server",
       "url": "https://github.com/github/github-mcp-server",
       "evidence_kind": "Maintainer repository",
-      "note": "Repository, PR and CI tool access; scope configured permissions.",
+      "note": "Repository/PR/CI tools; scoped permissions.",
       "checked_on": "2026-09-24"
     },
     {
@@ -180,7 +180,7 @@
       "title": "Vercel — Official MCP server",
       "url": "https://vercel.com/docs/agent-resources/vercel-mcp",
       "evidence_kind": "Vendor documentation",
-      "note": "OAuth connection, supported clients, deployments and logs.",
+      "note": "OAuth, supported clients, deployments/logs.",
       "checked_on": "2026-09-24"
     },
     {
@@ -188,7 +188,7 @@
       "title": "Vercel — Deployment environments",
       "url": "https://vercel.com/docs/deployments/environments",
       "evidence_kind": "Vendor documentation",
-      "note": "Local, Preview and Production; first deployment production caveat. Retrieved with Exa.",
+      "note": "Local/Preview/Production; first deployment production. Retrieved via Exa.",
       "checked_on": "2026-09-24"
     },
     {
@@ -196,7 +196,7 @@
       "title": "Vercel — Instant Rollback",
       "url": "https://vercel.com/docs/instant-rollback",
       "evidence_kind": "Vendor documentation",
-      "note": "Rollback eligibility and external configuration/data compatibility. Retrieved with Exa.",
+      "note": "Rollback eligibility; external config/data compatibility. Retrieved via Exa.",
       "checked_on": "2026-09-24"
     },
     {
@@ -204,7 +204,7 @@
       "title": "GitHub — Workflow concurrency",
       "url": "https://docs.github.com/en/actions/how-tos/write-workflows/choose-when-workflows-run/control-workflow-concurrency",
       "evidence_kind": "Vendor documentation",
-      "note": "Workflow concurrency groups and cancellation controls.",
+      "note": "Workflow concurrency/cancellation.",
       "checked_on": "2026-09-24"
     },
     {
@@ -212,7 +212,7 @@
       "title": "GitHub — Required status checks troubleshooting",
       "url": "https://docs.github.com/en/pull-requests/how-tos/merge-and-close-pull-requests/troubleshooting-required-status-checks",
       "evidence_kind": "Vendor documentation",
-      "note": "Required checks, skipped workflows and merge queue events.",
+      "note": "Required checks, skipped workflows, merge queues.",
       "checked_on": "2026-09-24"
     },
     {
@@ -220,7 +220,7 @@
       "title": "OpenAI — Evaluating skills",
       "url": "https://developers.openai.com/blog/eval-skills",
       "evidence_kind": "Publisher evaluation guidance",
-      "note": "Evaluate workflow behavior and resource use on representative tasks.",
+      "note": "Representative tasks: behavior and resource use.",
       "checked_on": "2026-09-24"
     },
     {
@@ -228,7 +228,7 @@
       "title": "Vercel — AGENTS.md versus skills evaluation",
       "url": "https://vercel.com/blog/agents-md-outperforms-skills-in-our-agent-evals",
       "evidence_kind": "Publisher benchmark",
-      "note": "Narrow Next.js experiment; not a universal agent or skill ranking.",
+      "note": "Narrow Next.js experiment; no universal ranking.",
       "checked_on": "2026-09-24"
     },
     {
@@ -236,7 +236,7 @@
       "title": "Agent Skills — Format specification",
       "url": "https://agentskills.io/specification",
       "evidence_kind": "Open format specification",
-      "note": "SKILL.md, metadata, supporting files and progressive loading.",
+      "note": "SKILL.md, metadata, supporting files, progressive loading.",
       "checked_on": "2026-09-24"
     },
     {
@@ -244,7 +244,7 @@
       "title": "Cursor — Skills",
       "url": "https://cursor.com/docs/skills",
       "evidence_kind": "Vendor documentation",
-      "note": "Skill discovery paths, compatibility locations and invocation.",
+      "note": "Discovery, compatibility paths, invocation.",
       "checked_on": "2026-09-24"
     },
     {
@@ -252,7 +252,7 @@
       "title": "Cursor — Rules",
       "url": "https://cursor.com/docs/rules",
       "evidence_kind": "Vendor documentation",
-      "note": "Project rules and AGENTS.md guidance.",
+      "note": "Project rules and AGENTS.md.",
       "checked_on": "2026-09-24"
     },
     {
@@ -260,7 +260,7 @@
       "title": "Anthropic — Common workflows",
       "url": "https://code.claude.com/docs/en/common-workflows",
       "evidence_kind": "Vendor documentation",
-      "note": "Repository exploration, worktrees and delegated research.",
+      "note": "Exploration, worktrees, delegated research.",
       "checked_on": "2026-09-24"
     },
     {
@@ -268,7 +268,7 @@
       "title": "Emergent — Introducing E3",
       "url": "https://emergent.sh/blog/introducing-e-3-autonomous-app-building-on-emergent",
       "evidence_kind": "Vendor workflow description",
-      "note": "Brainstorming, phased orchestration, testing/fixing and preview delivery; not independent production-readiness evidence.",
+      "note": "Brainstorm/build/test/fix/preview; no independent readiness proof.",
       "checked_on": "2026-09-24"
     },
     {
@@ -276,7 +276,7 @@
       "title": "Anthropic — Prompting Claude Fable 5.1",
       "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/prompting-claude-fable-5-1",
       "evidence_kind": "Vendor documentation",
-      "note": "Follow-through, effort evaluation, context preservation, scope control and delegation; behavior is model-specific.",
+      "note": "Follow-through, context, scope, delegation, effort; model-specific.",
       "checked_on": "2026-09-24"
     },
     {
@@ -284,7 +284,7 @@
       "title": "OpenAI — Using GPT-6 Astra",
       "url": "https://developers.openai.com/api/docs/guides/latest-model/gpt-6-astra.md",
       "evidence_kind": "Vendor documentation",
-      "note": "Autonomy, concrete approval boundaries, instruction interactions and proportionate verification; recheck client-specific behavior.",
+      "note": "Autonomy, approvals, instructions, proportionate checks; verify client behavior.",
       "checked_on": "2026-09-24"
     },
     {
@@ -292,7 +292,7 @@
       "title": "OpenAI — Building games with Astra",
       "url": "https://developers.openai.com/blog/how-to-build-games-with-astra",
       "evidence_kind": "Publisher case study",
-      "note": "Experience constraints, visual references, observable state and real interaction testing; one example, not comparative performance evidence.",
+      "note": "Experience constraints, references, state, real interactions; one case, no comparison.",
       "checked_on": "2026-09-24"
     },
     {
@@ -300,7 +300,7 @@
       "title": "Anthropic — Harness design for long-running application development",
       "url": "https://www.anthropic.com/engineering/harness-design-long-running-apps",
       "evidence_kind": "Publisher experiment",
-      "note": "Separate generator/evaluator, explicit quality criteria and iterative application testing; additional cost and complexity, with possible regressions.",
+      "note": "Generator/evaluator, explicit criteria, iterative tests; added cost/complexity, possible regression.",
       "checked_on": "2026-09-24"
     },
     {
@@ -308,7 +308,7 @@
       "title": "Apple — 2026 Apple Design Awards",
       "url": "https://www.apple.com/newsroom/2026/06/apple-reveals-winners-of-the-2026-apple-design-awards/",
       "evidence_kind": "Award organizer publication",
-      "note": "Examples of interaction, inclusivity, innovation and visual craft; awards do not establish demand or commercial success.",
+      "note": "Interaction, inclusivity, innovation, craft; awards prove no demand/business success.",
       "checked_on": "2026-09-24"
     },
     {
@@ -316,7 +316,7 @@
       "title": "Google — Design Sprint Kit",
       "url": "https://designsprintkit.withgoogle.com/",
       "evidence_kind": "Publisher methodology",
-      "note": "Define hypotheses, prototype and validate with users; agent inspection is not customer research.",
+      "note": "Hypotheses, prototypes, user validation; agents are not customer research.",
       "checked_on": "2026-09-24"
     },
     {
@@ -324,7 +324,7 @@
       "title": "OpenAI — GPT-6 Astra model",
       "url": "https://developers.openai.com/api/docs/models/gpt-6-astra",
       "evidence_kind": "Vendor documentation",
-      "note": "Retrieved API effort list runs through max; does not establish equivalence to a client-specific ultra label.",
+      "note": "Retrieved API effort through max; client ultra equivalence unestablished.",
       "checked_on": "2026-09-24"
     }
   ],
@@ -366,6 +366,6 @@
     "visibility": "public",
     "default_branch": "main",
     "verified_on": "2026-09-24",
-    "scope": "Publication of this reference kit only; no application deployment."
+    "scope": "Reference-kit publication only; no app deployment."
   }
 }

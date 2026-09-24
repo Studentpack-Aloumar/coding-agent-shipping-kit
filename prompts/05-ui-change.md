@@ -1,17 +1,17 @@
-# Implement and inspect UI behavior
+# Implement UI
 
-[Home](../README.md) · [All prompts](../PROMPTS.md) · [How to use](../README.md#using-a-prompt)
+[Prompts](../PROMPTS.md) · [Usage](../README.md#using-a-prompt)
 
-**Trigger:** Use for a UI change; not a mandate to redesign the application.
+**Use:** UI change.
 
 ```text
-Implement the requested UI change using the existing design system. Preserve information hierarchy and established interactions unless the request changes them. Reuse existing components; use the shadcn skill only when this project actually uses shadcn.
+Use existing design system, components and interactions unless scope changes them. Apply relevant React/Next.js guidance; shadcn only in shadcn projects. Optional skills aren't prerequisites.
 
-For React/Next.js, apply relevant React guidance to the changed path. Use installed Vercel React or web-design-guidelines skills when applicable; existing project guidance and browser checks remain usable when those optional skills are unavailable.
+Inspect desktop/mobile rendering. Exercise main journey, relevant loading/empty/error/disabled states, keyboard, focus, accessible names and backend effects. Check console/network.
 
-Inspect the running result at the affected desktop/mobile widths. Exercise the main journey plus relevant loading, empty, error and disabled states. Check keyboard operation, focus, accessible naming and console/network failures. Verify backend effects when the flow requires them.
+For substantial work, seek separate critique when available: usefulness, clarity, coherence, originality, accessibility, maintainability. Fix consequential flaws, recheck, retain strongest result; stop unproductive polishing. Keep meaningful durable regressions.
 
-For substantial product work, obtain separate critical review when available against usefulness, clarity, coherent design, originality, accessibility and maintainability. Fix consequential weaknesses, verify improvements and retain the strongest result; avoid unproductive polishing. Keep focused durable regression assertions where they protect repeatable behavior. If app access prevents inspection, state the exact gap. Return the exact tested environment, screenshots/artifacts, check results and any untested states. A screenshot alone is not completion evidence.
+Return tested environment, artifacts, results, untested states/access gaps. Screenshots alone prove no completion.
 ```
 
-Related documentation: [R10](../SOURCES.md#r10) [R11](../SOURCES.md#r11) [R12](../SOURCES.md#r12)
+Sources: [R10](../SOURCES.md#r10) [R11](../SOURCES.md#r11) [R12](../SOURCES.md#r12)

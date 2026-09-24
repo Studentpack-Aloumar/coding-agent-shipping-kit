@@ -1,17 +1,15 @@
-# Execute an explicitly authorized release
+# Release
 
-[Home](../README.md) · [All prompts](../PROMPTS.md) · [How to use](../README.md#using-a-prompt)
+[Prompts](../PROMPTS.md) · [Usage](../README.md#using-a-prompt)
 
-**Trigger:** Use only after approval identifies the target and material change.
+**Use:** Explicit target/change approval.
 
 ```text
-Execute only the production release already explicitly authorized for this task. Before acting, confirm the target account/project, artifact revision, material configuration and migration changes, approval, required checks and recovery plan.
+Execute only the approved release. Confirm account/project, artifact, configuration/migrations, authority, required checks and recovery plan. Missing authority or materially changed candidate: stop before writes; report gap.
 
-If authorization is missing or the candidate has materially changed, stop before the write and identify the exact gap. Do not substitute your own approval or broaden the rollout.
+Use existing release mechanism and approved order. Preserve audit evidence. On failure, execute only preauthorized recovery; otherwise stop writes and report. No improvised destructive rollback.
 
-Use the existing release mechanism. Preserve audit evidence and follow the approved migration/order constraints. On failure, follow the preauthorized recovery action; otherwise stop further writes and report the condition. Do not improvise destructive database rollback.
-
-Return what was actually released, deployment identity, timestamps, observed failures and immediate verification. A completed deployment command does not by itself establish production correctness.
+Return released artifact/deployment, timestamps, failures and immediate verification. Command success alone proves no production correctness.
 ```
 
-Related documentation: [R23](../SOURCES.md#r23) [R24](../SOURCES.md#r24)
+Sources: [R23](../SOURCES.md#r23) [R24](../SOURCES.md#r24)

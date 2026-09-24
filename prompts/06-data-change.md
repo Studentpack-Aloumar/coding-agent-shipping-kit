@@ -1,17 +1,17 @@
-# Change data access or schema safely
+# Change data
 
-[Home](../README.md) · [All prompts](../PROMPTS.md) · [How to use](../README.md#using-a-prompt)
+[Prompts](../PROMPTS.md) · [Usage](../README.md#using-a-prompt)
 
-**Trigger:** Use for database, query, access-policy or persistent-data work.
+**Use:** Queries, schema or access policy.
 
 ```text
-Inspect the existing data model and access path before changing it. Use the relevant database guidance; for Postgres work, select supabase-postgres-best-practices only where applicable.
+Inspect model/access path; apply relevant database guidance. Use isolated development data and synthetic users. Verify user/tenant authorization, validation, transactions, errors and representative query behavior.
 
-Implement and test against an isolated development database with synthetic data. Confirm user/tenant authorization, input validation, transaction behavior and error cases for the changed path. Assess query behavior using representative nonproduction data rather than declaring performance from syntax alone.
+Schema changes: document current/candidate compatibility, deployment order and recovery. Destructive migrations need separate approval.
 
-For a schema change, document compatibility with both the current and candidate application, deployment ordering and the recovery implications. Avoid destructive migrations unless separately approved.
+This prompt grants no production-data or migration authority. Separately authorized patient-data tasks permit necessary processing through established authorized tools; new recipients/purposes require approval. Keep records out of public artifacts. Production mutations require explicit authority.
 
-This development prompt alone does not authorize production-data access or production migrations. An explicitly authorized patient-data task may separately cover necessary inspection/processing through established authorized tools; ask before new recipients or purposes and keep records out of public artifacts. Production mutations still require explicit authorization. Return the migration/query diff, test evidence, required release steps and unresolved data risks.
+Return diff, test evidence, release steps and data risks.
 ```
 
-Related documentation: [R13](../SOURCES.md#r13) [R14](../SOURCES.md#r14)
+Sources: [R13](../SOURCES.md#r13) [R14](../SOURCES.md#r14)

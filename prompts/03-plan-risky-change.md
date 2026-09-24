@@ -1,17 +1,15 @@
-# Plan a nontrivial change
+# Plan risky change
 
-[Home](../README.md) · [All prompts](../PROMPTS.md) · [How to use](../README.md#using-a-prompt)
+[Prompts](../PROMPTS.md) · [Usage](../README.md#using-a-prompt)
 
-**Trigger:** Use for multi-system, high-risk or poorly understood work; skip routine edits.
+**Use:** Complex, risky or unclear work.
 
 ```text
-Create the smallest executable plan for the current agreed change. Inspect the actual code first. Identify the files and interfaces affected, ordering constraints, behavioral tests, configuration/data changes and the evidence needed at completion.
+Inspect actual code. Plan the smallest complete increment: files/interfaces, dependencies, tests, configuration/data changes, completion evidence and recovery compatibility.
 
-Preserve the existing architecture unless a concrete requirement prevents it. Prefer one vertical working increment over many disconnected scaffolds. Mark which work can proceed independently and which resources must not be shared.
+Preserve architecture unless requirements prevent it. Identify independent work and resources that cannot be shared. Separate implementation, publication and production authority.
 
-Separate local implementation from publishing and production operations. Include recovery/compatibility planning when persistent data or external behavior changes. No speculative future platform, unrelated refactor or unnecessary dependency.
-
-Resolve blocking product scope before implementation; do not ask for routine technical approvals. Return the plan and material risks without editing code.
+Resolve blocking product scope; own routine technical choices. No unrelated refactors, speculative platforms, unnecessary dependencies or code edits. Return plan and material risks.
 ```
 
-Related documentation: [R03](../SOURCES.md#r03)
+Sources: [R03](../SOURCES.md#r03)
