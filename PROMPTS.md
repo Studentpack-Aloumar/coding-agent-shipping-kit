@@ -8,10 +8,10 @@ Choose one; copy its block or explicitly request the attached file. Reuse contex
 
 | Prompt | Trigger |
 |---|---|
-| [18 · Build from idea](prompts/18-build-from-idea.md) | Product discovery through working journeys |
+| [18 · Build from idea](prompts/18-build-from-idea.md) | Discovery, reuse selection, adoption through working journeys |
 | [00 · Onboard](prompts/00-onboard-repo.md) | Unfamiliar/changed environment |
 | [01 · Contract](prompts/01-task-contract.md) | Unclear outcome/scope |
-| [02 · Research](prompts/02-research-uncertainty.md) | External fact affects implementation |
+| [02 · Research](prompts/02-research-uncertainty.md) | External uncertainty or reuse decision |
 | [03 · Plan](prompts/03-plan-risky-change.md) | Complex, risky or unclear change |
 
 ## Implement and verify

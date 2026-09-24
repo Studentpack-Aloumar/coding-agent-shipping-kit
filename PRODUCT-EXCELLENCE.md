@@ -16,10 +16,10 @@ Agent judgments remain hypotheses. Choose relevant metrics; invent no targets, c
 
 ## Run the product loop
 
-1. **Frame:** inspect work/alternatives; define user, problem, advantage, journey, constraints, criteria. Group consequential questions. Recommend reuse or not building when justified.
+1. **Frame:** inspect work/alternatives; define user, problem, advantage, journey, constraints, criteria. Group consequential questions. [Compare reusable products/components](REUSE.md#select-before-building); recommend adoption or not building when justified.
 2. **Test risk:** examine assumptions most likely to invalidate the idea. Use labeled prototypes/small experiments; identify simulations. Real-user contact requires authorization.
 3. **Design:** relevant references, existing system, deliberate hierarchy, typography, spacing, language, imagery, motion and accessibility. Reuse components; avoid novelty without benefit.
-4. **Build:** complete increments with loading/empty/failure/recovery states. Preserve brief, decisions and evidence across sessions. Prototypes remain labeled.
+4. **Build:** [qualify the base and assemble complete journeys](BUILD-RECIPES.md) with loading/empty/failure/recovery states. Preserve brief, adoption recipe and evidence across sessions. Prototypes remain labeled.
 5. **Critique:** real controls, relevant viewports, server effects. Separate reviewer for substantial work when available; original criteria plus running result. Assess usefulness, clarity, coherence, originality, accessibility, reliability, maintainability. Evidence, no finding quotas.
 6. **Improve:** fix consequential weaknesses, recheck, retain recoverable best candidate. Later iterations can regress. Stop unproductive polishing; unmet criteria remain unmet. Scope changes require owner decision.
 7. **Integrate:** authorized workflow, required gates, accessible private preview where available. Preserve production approval. Identify missing user/business validation; no unrequested monitoring, outreach or paid experiments.

@@ -12,6 +12,8 @@ Recommendations; no comparative benchmark. Optimize accepted, working changes.
 
 Use [18 · Build](prompts/18-build-from-idea.md) and [product excellence](PRODUCT-EXCELLENCE.md): user, problem, alternatives, advantage, essential journey. Test risky assumptions; deliver complete increments. Separate user, design and commercial evidence.
 
+Before new construction, [select reusable products/components](REUSE.md#select-before-building). Use [build recipes](BUILD-RECIPES.md): qualify one base, design the first journey, assemble in dependency order, retain actual evidence. Saved recipes reduce repeated discovery; relevant version/environment changes require requalification.
+
 Running work needs an executing job. Preview must open for the owner and match the tested revision. Changed briefs invalidate dependent evidence. Source checkpoints restore no database, external resource or charge; chat budgets enforce no provider cap.
 
 ## 2. Match the resource to the decision

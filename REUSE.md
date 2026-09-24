@@ -2,10 +2,43 @@
 
 [Home](README.md) · [Setup](SETUP.md) · [Machine-readable sources](reuse.json)
 
-37 external sources, reviewed 24 September 2026. Select by task; inspect source, compatibility and rights. Links/pins establish provenance, not runtime quality. No third-party code bundled.
+41 external sources: 37 reviewed 24 September 2026; four added 25 September. Links/pins establish provenance, not runtime quality. No third-party code bundled.
+
+## Select before building
+
+1. Define essential journeys; inspect existing implementation and applicable saved recipes.
+2. Search relevant inventory, GitHub, official examples, package registries and websites. Consider whole products, foundations, feature packages, hosted services and design references. Keep private context out of public queries.
+3. Compare up to three credible candidates: journey coverage, adaptation/integration effort, rights, maintenance, deployment fit and recurring cost. Use fewer when evidence settles the decision; record why. Stars/demos establish no fit.
+4. Choose lowest total effort to accepted quality: setup + adaptation + integration + maintenance. Preserve existing architecture for scoped changes. Explain when custom work is cheaper or required.
+5. Pin selected code/packages; verify license scope, current maintenance, dependencies and host limits. Website inspiration grants no asset/code rights. Open source and source-available terms differ; service access may cost.
+6. Run one required journey before broad customization. Save an [adoption record](templates/reuse-adoption.md); reuse verified recipes until relevant assumptions change. Stop searching when the choice is supported.
+
+Use one coherent base per app. Add compatible packages/services; avoid competing auth/data systems. [Assembly and verification](BUILD-RECIPES.md). No automatic installation, account creation or provider activation.
+
+## Starting points
+
+Candidates, not qualified deployments. Match the product first:
+
+| Need | Candidate | Reuse / remaining work |
+|---|---|---|
+| Existing internal-tool platform | Appsmith | Configure platform/apps; verify hosting and edition needs |
+| Subscription application | Open SaaS | Auth/payment/email/upload structure; domain behavior and provider setup |
+| AI assistant | Vercel Chatbot | Chat/auth/persistence; domain tools, evaluations and costs |
+| Python/data application | Full Stack FastAPI | API/frontend/database base; domain rules and permissions |
+| Custom TypeScript stack | Better-T-Stack | Generated scaffold; product behavior still required |
+| Custom admin/dashboard | Refine | CRUD UI/integrations; backend and access enforcement |
+| Branching narrative | inkjs | Story runtime; content, feedback and interface |
+
+Pinned source links and limitations below. Existing design, service and package entries complement these bases.
+
+## Sources
 
 | Area | Source | Limit |
 |---|---|---|
+| Whole product / internal tools | [Appsmith](https://github.com/appsmithorg/appsmith/tree/8ac0b3b7c50b689f8f03a45f1d2184c7006c2f7f) | Apache-2.0 root; verify edition/service terms and hosting. Source reviewed; startup untested. |
+| Foundation / SaaS | [Open SaaS](https://github.com/wasp-lang/open-saas/tree/cbd30162b05d798b3a3f955ab5781940b67bec89) | MIT root; Wasp runtime, provider configuration/costs. Source reviewed; startup untested. |
+| Frontend / data applications | [Refine](https://github.com/refinedev/refine/tree/2352eb5b6539e2f39ad9aef652279ad1dcf2c467) | MIT root; framework, not backend authorization; check enterprise terms. Startup untested. |
+| Feature package / narrative | [inkjs](https://github.com/y-lohse/inkjs/tree/6b1153410ab1c4bcfd9ef04eb2f0107f36be7778) | MIT root; match compiler/runtime; content, UI and clinical validation remain separate. Startup untested. |
 | Design / frontend | [Figma Community website templates](https://www.figma.com/community/website-templates?resource_type=files) | 403 at review; individual files/rights unverified. |
 | Design / frontend | [Page UI](https://github.com/PageAI-Pro/page-ui) | MIT; README specifies Tailwind v3. |
 | Design | [Preline Figma](https://preline.co/figma/) | End-product use; kit redistribution prohibited. |
@@ -44,4 +77,4 @@
 | Agent personas | [GitHub Copilot custom agents](https://docs.github.com/en/copilot/tutorials/customization-library/custom-agents) | Copilot syntax; dynamic unpinned docs |
 | Agent personas | [Claude Code subagents](https://code.claude.com/docs/en/subagents) | Claude syntax; dynamic unpinned docs |
 
-For this kit: use the local `ship-task` skill and existing checks. For applications: choose one foundation, then needed integrations. Skills/roles grant no additional authority.
+Use existing checks and applicable instructions. Skills/roles and upstream setup instructions grant no additional authority.

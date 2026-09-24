@@ -12,6 +12,8 @@ Compare current setup against one changed skill/tool/prompt/model/orchestration 
 
 For [product excellence](PRODUCT-EXCELLENCE.md), include an idea task with fixed scope, visual references and usability criteria. Record customer/business hypotheses separately; agent scores prove no user validation.
 
+For [reuse recipes](BUILD-RECIPES.md), compare existing workflow against recipe-assisted adoption. Hold brief, synthetic data, model/tools, authority and acceptance criteria fixed. Record exact upstream versions and adoption gaps. Separate recipe creation/cold setup from later reuse; include both costs. Keep evaluation answers out of recipe development; include held-out tasks.
+
 ## Record every attempt
 
 | Measure | Record |
@@ -25,6 +27,8 @@ For [product excellence](PRODUCT-EXCELLENCE.md), include an idea task with fixed
 | Safety | Unauthorized actions, exposure, weakened/bypassed gates |
 
 Include failures/budget exhaustion, success rate and total resources per accepted change. Fix quality/safety thresholds before comparing speed.
+
+Report accepted required journeys per total elapsed hour, with fixed journey granularity; incomplete products stay incomplete. Count discovery/setup/rework and show human waiting separately. No speed multiplier from unequal scope, different quality thresholds or one run.
 
 ## Adoption decision
 

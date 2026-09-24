@@ -12,6 +12,8 @@ Extreme concision, everywhere: replies, docs, prompts, comments. Sacrifice gramm
 - `tools/`: integrity/evidence checks. No app/build; evidence validator uses pinned `jsonschema` through `uv`.
 - `.github/workflows/`: automatic kit checks; no deployment.
 
+Reuse workflow: `REUSE.md` selects; `BUILD-RECIPES.md` qualifies/assembles; `templates/reuse-adoption.md` records evidence. Source pins prove no working deployment.
+
 ## Editing
 
 Preserve numbered prompt filenames, relative links, source anchors, owner-only `LICENSE`, and schema semantics. Update indexes/manifest with inventory changes; keep README/manifest versions aligned. Record meaningful changes in `CHANGELOG.md`.

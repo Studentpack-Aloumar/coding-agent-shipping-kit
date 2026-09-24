@@ -1,6 +1,6 @@
 # Coding-agent shipping kit
 
-**24 September 2026 · v1.2.1 · Project-local skill; unbenchmarked.**
+**25 September 2026 · v1.3.0 · Project-local kit; unbenchmarked.**
 
 **Proprietary: mr. Aloumar only.** No general reuse license. Public GitHub viewing/forking rights remain; see [LICENSE](LICENSE). Custom notice: no legal review.
 
@@ -33,9 +33,10 @@ Files supply context; mentions alone grant no authority. Prompts register no sla
 |---|---|
 | [Owner agreement](templates/INSTRUCTIONS.owner.md) | Opt-in ownership, communication, integration authority |
 | [Product excellence](PRODUCT-EXCELLENCE.md) | Discovery, design, complete journeys, critique |
+| [Build recipes](BUILD-RECIPES.md) · [Adoption record](templates/reuse-adoption.md) | Select existing products/components; qualify, customize, retain evidence |
 | [Playbook](PLAYBOOK.md) | Workflow and resource selection |
 | [Resources](RESOURCES.md) · [Setup](SETUP.md) · [Compatibility](COMPATIBILITY.md) | Tools, activation, client differences |
-| [Reuse catalogue](REUSE.md) · [Task roles](.agents/skills/ship-task/references/roles.md) | 37 external sources; builder, reviewer, verifier |
+| [Reuse catalogue](REUSE.md) · [Task roles](.agents/skills/ship-task/references/roles.md) | 41 external sources; builder, reviewer, verifier |
 | [Evidence gates](GATES.md) | Permissions and completion requirements |
 | [Templates](templates/README.md) | Instructions and evidence records |
 | [Evaluation](EVALUATION.md) · [Sources](SOURCES.md) | Experiments and 41 primary references |

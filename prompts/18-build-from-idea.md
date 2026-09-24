@@ -9,9 +9,15 @@ Idea: <describe>. Own technical delivery of the agreed product, starting with it
 
 Define users, problem, alternatives, advantage, journey and observable usefulness/design/business criteria. Recommend reuse or not building when justified. Group consequential product questions; own routine technical choices. Ask before scope expansion.
 
+Before new implementation, inspect existing work and saved adoption recipes. Search relevant inventory, whole open-source products, official starters/examples, packages, services and websites. Compare up to three credible fits by journey coverage, setup/adaptation/integration/upkeep, license, maintenance, host and cost; stop when supported. Select one coherent base plus compatible additions. Website references grant no code/asset rights. Record source/version, choice/rejections and remaining product work. Preserve architecture for scoped changes.
+
+Qualify the selected base in isolated development: inspect setup/release effects, derive exact commands from its version, run one required journey. Save commands, prerequisites, configuration names, costs, revision and actual results as a reusable adoption recipe. Missing access is blocked; simulations stay labeled. Recheck affected evidence after upgrades; no automatic provider activation.
+
 Test invalidating assumptions early with labeled prototypes, synthetic data or working experiments. Distinguish simulation, feasibility and user validation. No invented customers or unauthorized outreach.
 
 Choose coherent visual/interaction references; use existing design system and reliable components. Deliberate workflow, typography, layout, language, motion, accessibility.
+
+Keep one concise design handoff: screens, hierarchy/tokens, components, responsive and interaction states, specific reference patterns. Start from a working shell; implement data/permissions through API/UI to one observed effect before expanding. Stop feature expansion on build failure; inspect the first diagnostic and repair narrowly.
 
 Build complete increments with loading/empty/failure/recovery states. Fix defects within adopted ownership; ask before features, workflow/clinical changes. Preserve decisions/progress. Brief updates; claim running only with an executing task.
 
@@ -24,4 +30,4 @@ Complete authorized integration; resolve scoped baseline blockers. Inspect autom
 Return result, usable journey, evidence and gaps. Separate build quality from customer/business outcomes. If blocked, deliver completed work plus one next action. No unfinished promises or plans/prototypes labeled finished products.
 ```
 
-Guidance: [product excellence](../PRODUCT-EXCELLENCE.md), [owner agreement](../templates/INSTRUCTIONS.owner.md), [task contract](../PLAYBOOK.md#5-keep-the-task-contract-short-and-testable) and [completion states](../GATES.md#completion-states). Research: [R33](../SOURCES.md#r33) [R34](../SOURCES.md#r34) [R35](../SOURCES.md#r35) [R36](../SOURCES.md#r36) [R37](../SOURCES.md#r37) [R38](../SOURCES.md#r38) [R39](../SOURCES.md#r39).
+Guidance: [reuse selection](../REUSE.md#select-before-building), [adoption recipe](../BUILD-RECIPES.md), [product excellence](../PRODUCT-EXCELLENCE.md), [owner agreement](../templates/INSTRUCTIONS.owner.md), [task contract](../PLAYBOOK.md#5-keep-the-task-contract-short-and-testable) and [completion states](../GATES.md#completion-states). Research: [R33](../SOURCES.md#r33) [R34](../SOURCES.md#r34) [R35](../SOURCES.md#r35) [R36](../SOURCES.md#r36) [R37](../SOURCES.md#r37) [R38](../SOURCES.md#r38) [R39](../SOURCES.md#r39).

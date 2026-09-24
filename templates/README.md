@@ -9,6 +9,7 @@ Inactive examples. Explicitly adopt/adapt in the target repository; preserve pol
 | [Owner agreement](INSTRUCTIONS.owner.md) | Opt-in ownership/integration authority |
 | [AGENTS starter](AGENTS.starter.md) | Merge guidance; add verified commands |
 | [Claude import](CLAUDE.import.md) | `@AGENTS.md` in target `CLAUDE.md`, beside intended instructions |
+| [Reuse adoption](reuse-adoption.md) | Candidate comparison, exact setup, customization and journey evidence |
 | [Evidence schema](shipping-evidence.schema.json) | Draft 2020-12 structure |
 | [Evidence example](shipping-evidence.example.json) | Blocked/unverified placeholders; replace with facts |
 

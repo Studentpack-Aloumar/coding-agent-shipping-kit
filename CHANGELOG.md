@@ -8,6 +8,13 @@
 - Added repository `AGENTS.md`: extreme concision throughout.
 - Preserved authorization/evidence gates, source inventory and schema behavior.
 
+## 1.3.0 — 25 September 2026
+
+- Reuse selection across products, foundations, packages, services and design references.
+- Adoption record and build recipes: qualification, design handoff, complete slices, narrow repair, journey evidence.
+- Wire existing prompts/guides; add pinned Appsmith, Open SaaS, Refine and inkjs sources (41 total).
+- Measure adoption cost and accepted journeys; no runtime qualification or speed claim.
+
 ## 1.2.1 — 24 September 2026
 
 - Repair malformed generated reports with `--write-report`; retain ordinary JSON failures.

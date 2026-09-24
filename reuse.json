@@ -1,6 +1,10 @@
 {
   "checked_on": "2026-09-24",
   "sources": [
+    {"name": "Appsmith", "layer": "Whole product / internal tools", "url": "https://github.com/appsmithorg/appsmith/tree/8ac0b3b7c50b689f8f03a45f1d2184c7006c2f7f", "license": "Apache-2.0 root; verify edition/service terms", "limits": "Verify hosting and edition needs. Source reviewed; startup untested.", "checked_on": "2026-09-25"},
+    {"name": "Open SaaS", "layer": "Foundation / SaaS", "url": "https://github.com/wasp-lang/open-saas/tree/cbd30162b05d798b3a3f955ab5781940b67bec89", "license": "MIT root; verify dependencies/assets", "limits": "Wasp runtime, provider configuration/costs. Source reviewed; startup untested.", "checked_on": "2026-09-25"},
+    {"name": "Refine", "layer": "Frontend / data applications", "url": "https://github.com/refinedev/refine/tree/2352eb5b6539e2f39ad9aef652279ad1dcf2c467", "license": "MIT root; check enterprise terms", "limits": "Framework, not backend authorization. Source reviewed; startup untested.", "checked_on": "2026-09-25"},
+    {"name": "inkjs", "layer": "Feature package / narrative", "url": "https://github.com/y-lohse/inkjs/tree/6b1153410ab1c4bcfd9ef04eb2f0107f36be7778", "license": "MIT root; content rights separate", "limits": "Match compiler/runtime; content, UI and clinical validation remain separate. Source reviewed; startup untested.", "checked_on": "2026-09-25"},
     {"name": "Figma Community website templates", "layer": "Design / frontend", "url": "https://www.figma.com/community/website-templates?resource_type=files", "license": "Per item; verify terms", "limits": "403 at review; individual files/rights unverified."},
     {"name": "Page UI", "layer": "Design / frontend", "url": "https://github.com/PageAI-Pro/page-ui", "license": "Per item; verify terms", "limits": "MIT; README specifies Tailwind v3."},
     {"name": "Preline Figma", "layer": "Design", "url": "https://preline.co/figma/", "license": "Custom Figma terms", "limits": "End-product use; kit redistribution prohibited."},
