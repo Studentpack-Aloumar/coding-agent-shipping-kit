@@ -9,6 +9,8 @@ Review the specified candidate against its base revision and the original accept
 
 Look for evidenced correctness regressions, authorization/data-boundary mistakes, state/race problems, unsafe migrations and missing required behavior. Check whether tests meaningfully cover the risk. Do not invent findings, require unnecessary abstraction or nitpick formatting already enforced by tooling.
 
+For substantial user-facing work, also interact with the running product and assess usefulness, clarity, coherent design, originality, accessibility and maintainability against the agreed direction. Separate observed usability defects, subjective design suggestions and unvalidated commercial hypotheses. Report app-access limitations; do not claim customer validation from agent review.
+
 For each confirmed issue give severity, file/line, the triggering condition, consequence and smallest correction. Separate hypotheses from demonstrated defects. Use only safe, authorized nonproduction checks.
 
 Return findings, coverage limitations and the reviewed revision. If no actionable issue is found, say so without claiming the code is bug-free. Do not edit, post comments or merge.

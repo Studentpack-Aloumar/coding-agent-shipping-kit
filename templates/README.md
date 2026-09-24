@@ -2,10 +2,11 @@
 
 [Home](../README.md) · [Evidence gates](../GATES.md) · [Setup](../SETUP.md)
 
-These are examples to adapt in the target repository. Reading this directory does not activate repository instructions or grant authorization.
+These are examples to adapt in the target repository. Reading this directory does not activate repository instructions or grant authorization. When copying guidance into another project, adapt or remove kit-relative navigation links so they resolve there.
 
 | File | How to use it |
 |---|---|
+| [INSTRUCTIONS.owner.md](INSTRUCTIONS.owner.md) | Explicitly adopt the owner engineering agreement for a named project; includes bounded integration authority and product excellence. Merge with existing policy; do not activate it by filename alone. |
 | [AGENTS.starter.md](AGENTS.starter.md) | Merge useful sections into the target repository's existing instructions after inspection; fill in commands only after validating them. |
 | [CLAUDE.import.md](CLAUDE.import.md) | Contains only `@AGENTS.md`. Use that line in a target `CLAUDE.md` beside the intended `AGENTS.md` when needed; retain existing policy. |
 | [shipping-evidence.schema.json](shipping-evidence.schema.json) | JSON Schema Draft 2020-12 describing an evidence record's structure. |

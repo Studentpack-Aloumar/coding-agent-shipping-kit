@@ -1,21 +1,27 @@
-# Build a first useful version from an idea
+# Build an exceptional product from an idea
 
 [Home](../README.md) · [All prompts](../PROMPTS.md) · [How to use](../README.md#using-a-prompt)
 
-**Trigger:** Use when the user has an idea but no existing implementation plan or coding experience. Use the target repository if one exists; otherwise establish an authorized workspace before writing files.
+**Trigger:** Use for an idea without an implementation plan. Scale discovery and review to the product; use the target repository if one exists, otherwise establish an authorized workspace.
 
 ```text
-I have an idea for an app: <describe it in ordinary language>. Take responsibility for the technical choices and build the smallest useful version within the authorization already given for this task.
+I have an idea for an app: <describe it in ordinary language>. Own the technical decisions and deliver the complete agreed product, beginning with its smallest useful end-to-end journey. Reuse the scope, constraints and authorization already established.
 
-Start by restating the intended users, the one essential journey, what information the app handles, and any spending or access limits I supplied. Ask product questions together only if an answer is genuinely needed; do not make me choose a framework, database or package manager. Make safe, stated assumptions for routine choices. Turn the scope into a short brief with observable done conditions that I can check in the running app.
+Inspect existing work and instructions. Identify the intended users, important problem, existing alternatives, distinctive advantage and essential journey. Define observable success criteria for usefulness, experience and relevant commercial assumptions. Recommend reuse or not building when justified. Group genuinely missing consequential product questions; do not make me choose frameworks or packages. Make safe assumptions for routine details and ask before expanding product scope.
 
-Inspect any existing repository and its instructions before choosing an implementation. Build the actual journey, including its relevant error and empty states. Keep me informed in plain language: what is queued, running, verified or blocked, and the next action. Call work "running" only when an identifiable process or task is actually executing. If my brief changes, update the done conditions and invalidate evidence tied to the old version.
+Test the assumptions most likely to invalidate the idea before investing heavily. Use labeled prototypes, synthetic data or small working experiments when useful. Clearly separate simulated behavior, technical feasibility and actual user validation. Do not invent customer evidence or contact people without authorization.
 
-Run the relevant existing checks, inspect the changed behavior in the running app, and report the exact candidate, tested journeys and remaining gaps. An attractive screen, generated plan, screenshot, test title or partial check is not proof that the app works. For authenticated or persistent features, verify the real access path with synthetic users and isolated development data. If a preview is in scope, confirm it is accessible to me and tied to the tested revision.
+Establish a coherent visual and interaction direction using relevant references and the existing design system. Make deliberate choices about workflows, typography, layout, language, motion and accessibility. Reuse reliable components while giving the experience an identity appropriate to its users.
 
-Before a risky source change, record a recoverable source checkpoint and show what would be restored; remember that source recovery does not restore a database or external service. Respect the task's already established publishing, deployment and spending limits. A stated budget is not a provider-enforced spending cap. Ask for a genuinely missing approval only after the independent work is ready to review.
+Build complete journeys in manageable increments, including relevant loading, empty, failure and recovery states. Fix clear defects and usability problems within the adopted ownership boundary; propose new features, workflow or clinical behavior changes for my decision. Preserve decisions and progress across sessions. Give concise updates for meaningful findings, changes of approach and blockers. Call work running only when an identifiable process or task is executing.
 
-Return the working result or the exact blocker, the current plain-language status, how I can try the essential journey, what has actually been checked, and one concrete next action. Never label a saved request, a plan or a mock screen as a completed build.
+Run focused checks and required repository gates. Use the running app's real controls, inspect rendered behavior and relevant viewports, and verify backend effects. For access-controlled features, use separate synthetic users in isolated development data to check the real access path. If app access prevents verification, report that gap. Screenshots, test titles and attractive mock screens alone are not proof the product works.
+
+For substantial work, obtain separate critical review when available against the original criteria: usefulness, clarity, coherent design, originality, accessibility, reliability and maintainability. Fix consequential findings, verify improvements and retain the strongest candidate. Avoid endless polishing or complexity without user benefit. A changed brief or candidate invalidates dependent evidence; update it accordingly.
+
+Continue through authorized integration and required gates. Resolve blocking baseline failures within the agreed scope rather than hiding them. Inspect automatic release effects before pushing or merging. Prefer a private clickable preview when available, verifying its access controls, owner access and tested revision. Production/public release, new spending, sensitive-data use and destructive actions must remain within applicable authorization. Before risky source edits, record a recoverable checkpoint and identify what it restores. A source checkpoint does not restore databases or external services, and a stated budget is not a provider-enforced cap.
+
+Return the result, how I can use the essential journey, actual verification and remaining gaps. Separate implemented quality from customer adoption, retention and commercial evidence. If genuinely blocked, deliver the useful completed portion and one concrete next action. Do not leave promised implementation undone or label a plan, prototype or unexecuted job as a finished product.
 ```
 
-Related guidance: [the task contract](../PLAYBOOK.md#5-keep-the-task-contract-short-and-testable), [verification states](../GATES.md#completion-states), and [release boundary](../PLAYBOOK.md#9-make-the-release-boundary-explicit). Source background: [R01](../SOURCES.md#r01) [R03](../SOURCES.md#r03) [R23](../SOURCES.md#r23).
+Related guidance: [product excellence](../PRODUCT-EXCELLENCE.md), [owner agreement](../templates/INSTRUCTIONS.owner.md), [task contract](../PLAYBOOK.md#5-keep-the-task-contract-short-and-testable) and [completion states](../GATES.md#completion-states). Research: [R33](../SOURCES.md#r33) [R34](../SOURCES.md#r34) [R35](../SOURCES.md#r35) [R36](../SOURCES.md#r36) [R37](../SOURCES.md#r37) [R38](../SOURCES.md#r38) [R39](../SOURCES.md#r39).

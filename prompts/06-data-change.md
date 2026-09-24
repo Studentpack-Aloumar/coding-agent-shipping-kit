@@ -11,7 +11,7 @@ Implement and test against an isolated development database with synthetic data.
 
 For a schema change, document compatibility with both the current and candidate application, deployment ordering and the recovery implications. Avoid destructive migrations unless separately approved.
 
-Do not connect an agent tool to production data or apply production migrations. Return the migration/query diff, test evidence, required release steps and unresolved data risks.
+This development prompt alone does not authorize production-data access or production migrations. An explicitly authorized patient-data task may separately cover necessary inspection/processing through established authorized tools; ask before new recipients or purposes and keep records out of public artifacts. Production mutations still require explicit authorization. Return the migration/query diff, test evidence, required release steps and unresolved data risks.
 ```
 
 Related documentation: [R13](../SOURCES.md#r13) [R14](../SOURCES.md#r14)

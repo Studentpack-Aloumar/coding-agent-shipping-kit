@@ -9,6 +9,8 @@ Choose representative, sanitized tasks: one small bug, one UI state change, one 
 
 For each task compare the current setup against exactly one changed element: a skill, documentation retriever, prompt, model or orchestration setting. Fix the starting commit, environment, authorization, acceptance criteria and budget. Use isolated workspaces and no shared solution memory. Repeat runs and alternate ordering; record cold and warm starts separately.
 
+For the [product-excellence workflow](PRODUCT-EXCELLENCE.md), include an idea-to-product task with fixed scope, visual/interaction references, usability criteria and separately recorded customer/business hypotheses. Compare against the existing workflow under the same budget; do not treat an agent score as real-user validation.
+
 Use acceptance tests and review criteria written before seeing the generated implementation. Check both task quality and whether the skill activated only when appropriate. A guidance source loading successfully is not a successful task.
 
 ## Record every attempt

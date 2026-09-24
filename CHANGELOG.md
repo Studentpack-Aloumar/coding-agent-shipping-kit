@@ -2,6 +2,14 @@
 
 [Home](README.md) · [Prompts](PROMPTS.md) · [Setup](SETUP.md) · [Evidence](GATES.md) · [Sources](SOURCES.md)
 
+## 1.1.0 — 24 September 2026
+
+- Added the opt-in owner engineering agreement incorporating communication, technical discretion, adjacent defect ownership, persistence, bounded approval, patient-data handling and authorized integration defaults.
+- Expanded the idea-to-product prompt and added a product-excellence guide covering discovery, labeled prototypes, coherent design, separate critical review, actual app interaction and bounded iteration.
+- Reconciled approval gates, starter guidance and implementation/review/CI/PR prompts while preserving narrower read-only and preparation-only tasks.
+- Added eight primary sources with evidence qualifications; kept 19 prompts and updated navigation and the evaluation protocol.
+- These are documented operating recommendations. No instructions were installed into target projects, no model comparison was run and no product/business outcome was validated.
+
 ## 1.0.3 — 24 September 2026
 
 - Added a prompt for first-time builders that turns an idea into a small working journey while the agent handles routine technical choices.

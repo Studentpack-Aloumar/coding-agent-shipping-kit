@@ -11,7 +11,7 @@ For React/Next.js, apply relevant React guidance to the changed path. Use instal
 
 Inspect the running result at the affected desktop/mobile widths. Exercise the main journey plus relevant loading, empty, error and disabled states. Check keyboard operation, focus, accessible naming and console/network failures. Verify backend effects when the flow requires them.
 
-Keep durable regression assertions for repeatable behavior. Return the exact tested environment, screenshots/artifacts, check results and any untested states. A screenshot alone is not completion evidence.
+For substantial product work, obtain separate critical review when available against usefulness, clarity, coherent design, originality, accessibility and maintainability. Fix consequential weaknesses, verify improvements and retain the strongest result; avoid unproductive polishing. Keep focused durable regression assertions where they protect repeatable behavior. If app access prevents inspection, state the exact gap. Return the exact tested environment, screenshots/artifacts, check results and any untested states. A screenshot alone is not completion evidence.
 ```
 
 Related documentation: [R10](../SOURCES.md#r10) [R11](../SOURCES.md#r11) [R12](../SOURCES.md#r12)

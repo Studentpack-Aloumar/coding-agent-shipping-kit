@@ -9,7 +9,7 @@ Inspect the current candidate's CI configuration and actual failed or missing ch
 
 Identify whether the cause is code, setup, permissions, infrastructure, stale evidence or a workflow trigger. Distinguish required head/test-merge checks and merge-queue behavior. Read relevant logs with secrets redacted.
 
-Propose the smallest correction. Preserve required gates and assertions. Do not disable branch protection, remove failures from reporting, or repeatedly dispatch full workflows. Identify duplicate builds or obsolete runs, but do not cancel releases or migrations casually.
+For a diagnosis-only request, propose the smallest correction. When repair is authorized as part of implementation or integration, apply it, resolve blocking baseline failures within scope and continue until the required gates pass or a consequential decision is needed. Preserve required gates and assertions. Do not disable branch protection, remove failures from reporting, or repeatedly dispatch full workflows. Identify duplicate builds or obsolete runs, but do not cancel releases or migrations casually.
 
 Return the cause, current revision/check identifiers, proposed fix, validation plan and cost implications. Apply or publish changes only within the explicit authorization for this task.
 ```

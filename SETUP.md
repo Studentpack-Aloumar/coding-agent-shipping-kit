@@ -10,7 +10,7 @@ First inventory existing tools and skills. Inspect publisher ownership, package 
 In Codex, inspect `/skills` and use `$skill-installer` for a specifically selected skill. In Claude Code, inspect the current `/` menu before creating replacements for run/verify/review. Check existing same-name overrides. [R02](SOURCES.md#r02) [R04](SOURCES.md#r04)
 
 ## Targeted optional examples
-Run these only when the particular installation is covered by the task authorization and after inspecting the current installer help. Existing authorization remains valid for the same installation and scope.
+Run these only when the particular installation is covered by the task authorization and after inspecting the current installer help. Existing authorization remains valid for the same installation and scope. Explicit adoption of the [owner agreement](templates/INSTRUCTIONS.owner.md) covers necessary technical setup within its cost, data and destructive-action boundaries; no separate routine installation approval is needed.
 
 | Need | Documented entry point |
 |---|---|

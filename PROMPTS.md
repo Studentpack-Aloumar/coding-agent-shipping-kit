@@ -12,7 +12,7 @@ Use existing task context and authorization. A referenced source explains a capa
 
 | Prompt | Use when |
 |---|---|
-| [18 · Build a first useful version from an idea](prompts/18-build-from-idea.md) | Use when the user has an idea but no implementation plan or coding experience. |
+| [18 · Build an exceptional product from an idea](prompts/18-build-from-idea.md) | Use for an idea needing discovery, design direction and complete working journeys; scale effort to the product. |
 | [00 · Onboard the selected repository](prompts/00-onboard-repo.md) | Use once per repository, or after a material environment change. |
 | [01 · Define the task contract](prompts/01-task-contract.md) | Use when the desired outcome or scope is genuinely unclear. |
 | [02 · Resolve one material uncertainty](prompts/02-research-uncertainty.md) | Use for an external fact that could change implementation. |

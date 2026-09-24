@@ -4,7 +4,7 @@
 
 Checked on **24 September 2026** using Exa and primary-source web retrieval. Links are to publishers or maintainers, not repackaged skill catalogues.
 
-Documentation supports the listed capabilities, not a claim that a package is fastest, independently audited, or supported forever. No user repository, installed client, benchmark run or deployment was inspected. Source pages can change after this date.
+Documentation supports the listed capabilities, not a claim that a package is fastest, independently audited, or supported forever. The initial research did not inspect a user repository, installed client, benchmark run or deployment. Later repository publication and maintenance are recorded separately below and in the maintenance guide. Source pages can change after this date.
 
 The v1.0.2 maintenance pass checked all 32 URLs for HTTP availability and rechecked selected compatibility/setup claims (R04, R05, R08, R09, R12, R15, R17, R19, R20, R23 and R30). All URLs responded successfully, including redirects. Link availability is not full factual revalidation of every statement. The original statement above describes the initial research, not the subsequent publication recorded in [PUBLISH.md](PUBLISH.md).
 
@@ -231,3 +231,63 @@ The v1.0.2 maintenance pass checked all 32 URLs for HTTP availability and rechec
 [Anthropic — Common workflows](https://code.claude.com/docs/en/common-workflows)
 
 **Evidence:** Vendor documentation. Repository exploration, worktrees and delegated research.
+
+## v1.1.0 product-excellence research
+
+The following primary pages were read on 24 September 2026 through Exa, Parallel Search and Firecrawl during the owner-instruction research. Entries distinguish vendor descriptions, experiments and methodology from independent validation. The kit repository was subsequently inspected for integration; no model benchmark or target-application validation was performed.
+
+<a id="r33"></a>
+### R33 · Emergent — Introducing E3
+
+[Emergent — Introducing E3](https://emergent.sh/blog/introducing-e-3-autonomous-app-building-on-emergent)
+
+**Evidence:** Vendor workflow description. Brainstorming, phased orchestration, testing/fixing and preview delivery; not independent production-readiness evidence.
+
+<a id="r34"></a>
+### R34 · Anthropic — Prompting Claude Fable 5.1
+
+[Anthropic — Prompting Claude Fable 5.1](https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/prompting-claude-fable-5-1)
+
+**Evidence:** Vendor documentation. Follow-through, effort evaluation, context preservation, scope control and delegation; behavior is model-specific.
+
+<a id="r35"></a>
+### R35 · OpenAI — Using GPT-6 Astra
+
+[OpenAI — Using GPT-6 Astra](https://developers.openai.com/api/docs/guides/latest-model/gpt-6-astra.md)
+
+**Evidence:** Vendor documentation. Autonomy, concrete approval boundaries, instruction interactions and proportionate verification; recheck client-specific behavior.
+
+<a id="r36"></a>
+### R36 · OpenAI — Building games with Astra
+
+[OpenAI — Building games with Astra](https://developers.openai.com/blog/how-to-build-games-with-astra)
+
+**Evidence:** Publisher case study. Experience constraints, visual references, observable state and real interaction testing; one example, not comparative performance evidence.
+
+<a id="r37"></a>
+### R37 · Anthropic — Harness design for long-running application development
+
+[Anthropic — Harness design for long-running application development](https://www.anthropic.com/engineering/harness-design-long-running-apps)
+
+**Evidence:** Publisher experiment. Separate generator/evaluator, explicit quality criteria and iterative application testing; additional cost and complexity, with possible regressions.
+
+<a id="r38"></a>
+### R38 · Apple — 2026 Apple Design Awards
+
+[Apple — 2026 Apple Design Awards](https://www.apple.com/newsroom/2026/06/apple-reveals-winners-of-the-2026-apple-design-awards/)
+
+**Evidence:** Award organizer publication. Examples of interaction, inclusivity, innovation and visual craft; awards do not establish demand or commercial success.
+
+<a id="r39"></a>
+### R39 · Google — Design Sprint Kit
+
+[Google — Design Sprint Kit](https://designsprintkit.withgoogle.com/)
+
+**Evidence:** Publisher methodology. Define hypotheses, prototype and validate with users; agent inspection is not customer research.
+
+<a id="r40"></a>
+### R40 · OpenAI — GPT-6 Astra model
+
+[OpenAI — GPT-6 Astra model](https://developers.openai.com/api/docs/models/gpt-6-astra)
+
+**Evidence:** Vendor documentation. Retrieved API effort list runs through max; does not establish equivalence to a client-specific ultra label.

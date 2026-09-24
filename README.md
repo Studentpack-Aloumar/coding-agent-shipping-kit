@@ -1,19 +1,19 @@
 # Coding-agent shipping kit
 
-**24 September 2026 · v1.0.3 · Reference kit; not installed or benchmarked**
+**24 September 2026 · v1.1.0 · Reference kit; not installed or benchmarked**
 
-[Choose a prompt](PROMPTS.md) · [Setup](SETUP.md) · [Client compatibility](COMPATIBILITY.md) · [Evidence gates](GATES.md) · [Sources](SOURCES.md)
+[Owner agreement](templates/INSTRUCTIONS.owner.md) · [Product excellence](PRODUCT-EXCELLENCE.md) · [Choose a prompt](PROMPTS.md) · [Setup](SETUP.md) · [Client compatibility](COMPATIBILITY.md) · [Evidence gates](GATES.md) · [Sources](SOURCES.md)
 
 > **Proprietary — Basem Aloumar only.** This kit is reserved for Basem Aloumar's own use and projects. It is not open source and does not grant other people a personal-use or commercial-use license. See [LICENSE](LICENSE).
 > Public GitHub hosting still permits viewing and forking under GitHub's terms; this notice does not make a public repository private.
 
 ## Start here
 
-Keep your current coding agent and use this kit from the **application repository you want to improve**. The kit provides a playbook, 19 prompts and inert templates. Choose one prompt for the current task; no installation is required to copy its text. The new-builder prompt asks the agent to own technical choices and deliver a working, tested journey; it does not itself launch a builder service.
+Keep your current coding agent and use this kit from the **application repository you want to improve**. The kit provides a playbook, 19 prompts and inert templates. Choose one prompt for the current task; no installation is required to copy its text. The idea-to-product prompt covers discovery, distinctive design, complete tested journeys and critical review; it does not itself launch a builder service. Explicitly adopt the [owner agreement](templates/INSTRUCTIONS.owner.md) to use the personal communication, autonomy and bounded integration defaults. Reading or attaching it alone does not activate it.
 
 | What you need now | Start with |
 |---|---|
-| Turn an idea into a first working app | [18 · Build from an idea](prompts/18-build-from-idea.md) |
+| Turn an idea into a complete, distinctive product | [18 · Build from an idea](prompts/18-build-from-idea.md) |
 | Understand an unfamiliar repository | [00 · Onboard](prompts/00-onboard-repo.md) |
 | Implement a clear request | [04 · Implement](prompts/04-implement.md), then [07 · Verify](prompts/07-verify-local.md) if verification remains incomplete |
 | Fix a failing behavior | [08 · Debug](prompts/08-debug-failure.md) |
@@ -50,6 +50,8 @@ This is a proposed operating setup, not a measured ranking. Read the [playbook](
 
 | Document | Purpose |
 |---|---|
+| [Owner agreement](templates/INSTRUCTIONS.owner.md) | Opt-in engineering ownership, communication and approval defaults |
+| [Product excellence](PRODUCT-EXCELLENCE.md) | Discovery, design, build, critique and real-world validation |
 | [Playbook](PLAYBOOK.md) | Conditional lifecycle and resource selection |
 | [Prompt library](PROMPTS.md) | 19 prompts grouped by task |
 | [Resource catalogue](RESOURCES.md) | Tools, skills, activation and limitations |
@@ -58,7 +60,7 @@ This is a proposed operating setup, not a measured ranking. Read the [playbook](
 | [Evidence gates](GATES.md) | Authorization, verification, CI and release evidence |
 | [Templates](templates/README.md) | Instruction examples and shipping-evidence format |
 | [Evaluation](EVALUATION.md) | Test whether an addition helps |
-| [Source register](SOURCES.md) | 32 primary references |
+| [Source register](SOURCES.md) | 40 primary references |
 | [Publication and maintenance](PUBLISH.md) | Published repository, verification and update procedure |
 | [Changelog](CHANGELOG.md) | Changes to the kit |
 | [License](LICENSE) | Owner-only rights notice |

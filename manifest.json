@@ -1,6 +1,6 @@
 {
   "name": "coding-agent-shipping-kit",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "documentation_checked_on": "2026-09-24",
   "scope": "Source-backed reference, original prompts and inert templates; not a repository installation.",
   "runtime_tested_on_user_repositories": false,
@@ -261,6 +261,70 @@
       "url": "https://code.claude.com/docs/en/common-workflows",
       "evidence_kind": "Vendor documentation",
       "note": "Repository exploration, worktrees and delegated research.",
+      "checked_on": "2026-09-24"
+    },
+    {
+      "id": "R33",
+      "title": "Emergent — Introducing E3",
+      "url": "https://emergent.sh/blog/introducing-e-3-autonomous-app-building-on-emergent",
+      "evidence_kind": "Vendor workflow description",
+      "note": "Brainstorming, phased orchestration, testing/fixing and preview delivery; not independent production-readiness evidence.",
+      "checked_on": "2026-09-24"
+    },
+    {
+      "id": "R34",
+      "title": "Anthropic — Prompting Claude Fable 5.1",
+      "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/prompting-claude-fable-5-1",
+      "evidence_kind": "Vendor documentation",
+      "note": "Follow-through, effort evaluation, context preservation, scope control and delegation; behavior is model-specific.",
+      "checked_on": "2026-09-24"
+    },
+    {
+      "id": "R35",
+      "title": "OpenAI — Using GPT-6 Astra",
+      "url": "https://developers.openai.com/api/docs/guides/latest-model/gpt-6-astra.md",
+      "evidence_kind": "Vendor documentation",
+      "note": "Autonomy, concrete approval boundaries, instruction interactions and proportionate verification; recheck client-specific behavior.",
+      "checked_on": "2026-09-24"
+    },
+    {
+      "id": "R36",
+      "title": "OpenAI — Building games with Astra",
+      "url": "https://developers.openai.com/blog/how-to-build-games-with-astra",
+      "evidence_kind": "Publisher case study",
+      "note": "Experience constraints, visual references, observable state and real interaction testing; one example, not comparative performance evidence.",
+      "checked_on": "2026-09-24"
+    },
+    {
+      "id": "R37",
+      "title": "Anthropic — Harness design for long-running application development",
+      "url": "https://www.anthropic.com/engineering/harness-design-long-running-apps",
+      "evidence_kind": "Publisher experiment",
+      "note": "Separate generator/evaluator, explicit quality criteria and iterative application testing; additional cost and complexity, with possible regressions.",
+      "checked_on": "2026-09-24"
+    },
+    {
+      "id": "R38",
+      "title": "Apple — 2026 Apple Design Awards",
+      "url": "https://www.apple.com/newsroom/2026/06/apple-reveals-winners-of-the-2026-apple-design-awards/",
+      "evidence_kind": "Award organizer publication",
+      "note": "Examples of interaction, inclusivity, innovation and visual craft; awards do not establish demand or commercial success.",
+      "checked_on": "2026-09-24"
+    },
+    {
+      "id": "R39",
+      "title": "Google — Design Sprint Kit",
+      "url": "https://designsprintkit.withgoogle.com/",
+      "evidence_kind": "Publisher methodology",
+      "note": "Define hypotheses, prototype and validate with users; agent inspection is not customer research.",
+      "checked_on": "2026-09-24"
+    },
+    {
+      "id": "R40",
+      "title": "OpenAI — GPT-6 Astra model",
+      "url": "https://developers.openai.com/api/docs/models/gpt-6-astra",
+      "evidence_kind": "Vendor documentation",
+      "note": "Retrieved API effort list runs through max; does not establish equivalence to a client-specific ultra label.",
       "checked_on": "2026-09-24"
     }
   ],
