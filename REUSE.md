@@ -35,7 +35,7 @@
 | Agent skills / eval | [Microsoft Skills](https://github.com/microsoft/skills/tree/23d0dac5f83f268166a17f0bc7dc6c73dc348a33) | Microsoft-specific; work in progress |
 | Agent skills / personas / plugins | [GitHub awesome-copilot](https://github.com/github/awesome-copilot/tree/1f5644080a525d26a2e24f61a7609fb9b261c21a) | Review each contribution and host compatibility |
 | Plugins | [Anthropic plugin-dev](https://github.com/anthropics/claude-plugins-official/tree/8286e2db0113d3e0a124af3345a8fd15ab93937d/plugins/plugin-dev) | Claude-specific; review per-plugin license |
-| Skill checks | [Agent Skills skills-ref](https://github.com/agentskills/agentskills/tree/69ef37e9424c0a7ea9dd2293b559e43ec8176379/skills-ref) | Structure only; docs CC-BY-4.0 |
+| Skill checks | [Agent Skills skills-ref](https://github.com/agentskills/agentskills/tree/69ef37e9424c0a7ea9dd2293b559e43ec8176379/skills-ref) | Demo only; not production; docs CC-BY-4.0 |
 | Skill checks | [skill-validator](https://github.com/agent-ecosystem/skill-validator/tree/08e2f74a9b34702e1f3bef87b625eaed180ec25a) | Not behavioral validation |
 | Skill eval | [AWS sample-agent-skill-eval](https://github.com/aws-samples/sample-agent-skill-eval/tree/13b2277b300d2beafa09bbbe425ca0cc41f34c8d) | Experimental; provider cost and data transfer |
 | CI checks | [actionlint](https://github.com/rhysd/actionlint/tree/011a6d15e749bb3f2d771eed9c7aa0e7e3e10ee7) | Only relevant when workflows exist |

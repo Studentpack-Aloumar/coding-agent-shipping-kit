@@ -8,6 +8,12 @@
 - Added repository `AGENTS.md`: extreme concision throughout.
 - Preserved authorization/evidence gates, source inventory and schema behavior.
 
+## 1.2.1 — 24 September 2026
+
+- Repair malformed generated reports with `--write-report`; retain ordinary JSON failures.
+- Automate integrity/evidence checks in GitHub Actions; pinned actions, read-only access.
+- Document desktop discovery and `skills-ref` demo-only limitation.
+
 ## 1.2.0 — 24 September 2026
 
 - Project-local `ship-task` skill; builder/reviewer/verifier roles.

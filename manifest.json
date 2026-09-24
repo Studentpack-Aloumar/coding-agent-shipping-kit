@@ -1,6 +1,6 @@
 {
   "name": "coding-agent-shipping-kit",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "documentation_checked_on": "2026-09-24",
   "scope": "Original prompts, project-local skill, external-source catalogue and inactive evidence templates.",
   "runtime_tested_on_user_repositories": false,

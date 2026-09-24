@@ -10,6 +10,7 @@ Extreme concision, everywhere: replies, docs, prompts, comments. Sacrifice gramm
 - `templates/`: inactive examples. `evaluation/`: benchmark records.
 - `.agents/skills/`: project-local workflow and roles. `reuse.json`: external sources.
 - `tools/`: integrity/evidence checks. No app/build; evidence validator uses pinned `jsonschema` through `uv`.
+- `.github/workflows/`: automatic kit checks; no deployment.
 
 ## Editing
 

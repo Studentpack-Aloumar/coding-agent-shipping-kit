@@ -6,6 +6,7 @@
 
 | Client | Instructions | Skills / invocation |
 |---|---|---|
+| Codex desktop | `AGENTS.md` | Project-local `.agents/skills/`; select discovered skill. [R02](SOURCES.md#r02) |
 | Codex CLI/IDE | `AGENTS.md` | `.agents/skills/` along repo path; `/skills` or `$skill-name`. [R02](SOURCES.md#r02) |
 | Claude Code | `CLAUDE.md`; conditional `AGENTS.md` | `.claude/skills/`, plugins; `/skill-name`, possibly namespaced. [R04](SOURCES.md#r04) |
 | Copilot | Surface-specific | `.github/skills/`, `.claude/skills/`, `.agents/skills/`; invoke through that surface. [R17](SOURCES.md#r17) |
@@ -31,5 +32,7 @@ Cloud agent/code review: no OAuth remote MCP support; configured tools may run w
 Mentions install nothing and authorize no publication/deployment. Retrieved instructions remain source material unless adopted.
 
 ## Activation check
+
+Documentation support only; no recorded client/version activation tests. Desktop discovery observed in this workspace; other surfaces untested.
 
 Record client/version, skill ID/source, harmless activation result. Inspect overrides and global/project scope. Local installation guarantees no cloud availability. Installing skills requires applicable authority.

@@ -26,6 +26,14 @@ Verified 24 September 2026: [initial revision](https://github.com/Studentpack-Al
 
 The digest covers tracked/unignored files except its own report. Checks establish local package integrity only; no external, legal or runtime validation.
 
+`--write-report` also replaces malformed report JSON; invalid source JSON still blocks writing.
+
+## Automated checks
+
+[Kit checks](.github/workflows/check-kit.yml): PRs, `main` pushes, merge queues. Runs integrity plus evidence validation; never refreshes the report or deploys. Pins action commits/uv, uses standard Ubuntu and read-only repository access. Review updates against [GitHub guidance](https://docs.github.com/en/actions/reference/security/secure-use) and [setup-uv](https://github.com/astral-sh/setup-uv).
+
+Check name: `Kit integrity`. Required-check enforcement needs repository rules; workflow creation alone does not enforce merging. Verify the candidate's actual run after pushing. Public standard runners are [free](https://docs.github.com/en/billing/concepts/product-billing/github-actions); private copies require allowance/billing review.
+
 ## Access and rights
 
 [Owner-only rights](LICENSE) remain subject to [GitHub terms](https://docs.github.com/en/site-policy/github-terms/github-terms-of-service), including public viewing/forking. Privacy requires restricted hosting. Documentation grants no fresh publication/settings authority. [Licensing](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository) · [Push protection](https://docs.github.com/en/code-security/how-tos/secure-your-secrets/prevent-future-leaks/enable-push-protection).

@@ -1,6 +1,6 @@
 # Coding-agent shipping kit
 
-**24 September 2026 · v1.2.0 · Project-local skill; unbenchmarked.**
+**24 September 2026 · v1.2.1 · Project-local skill; unbenchmarked.**
 
 **Proprietary: mr. Aloumar only.** No general reuse license. Public GitHub viewing/forking rights remain; see [LICENSE](LICENSE). Custom notice: no legal review.
 
@@ -58,3 +58,5 @@ uv run tools/check-evidence.py templates/shipping-evidence.example.json
 ```
 
 Recommendations remain unbenchmarked; [results](evaluation/results.json): `not_run`. Third-party resources stay linked; templates inactive. Evidence validation proves no release readiness.
+
+[Kit checks](.github/workflows/check-kit.yml) runs integrity/evidence checks on PRs, `main` pushes and merge queues. Check the candidate's actual run; workflow presence proves no pass.

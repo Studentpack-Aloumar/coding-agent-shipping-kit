@@ -59,7 +59,8 @@ def check(write_report=False):
             except ValueError as error:
                 raise ValueError(f'{name}: {error}') from error
         if path.suffix == '.json':
-            data[name] = json.loads(files[name])
+            # Refresh replaces the generated report; validate every other JSON file.
+            data[name] = {} if name == REPORT and write_report else json.loads(files[name])
 
     links = 0
     for name, (prose, _) in docs.items():
