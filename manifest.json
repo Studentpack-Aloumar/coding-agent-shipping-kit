@@ -1,6 +1,6 @@
 {
   "name": "coding-agent-shipping-kit",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "documentation_checked_on": "2026-09-24",
   "scope": "Source-backed reference, original prompts and inert templates; not a repository installation.",
   "runtime_tested_on_user_repositories": false,
@@ -351,10 +351,10 @@
     "prompts/18-build-from-idea.md"
   ],
   "rights_notice": {
-    "name": "Proprietary — Basem Aloumar only",
+    "name": "Proprietary — mr. Aloumar only",
     "file": "LICENSE",
-    "rights_holder": "Basem Aloumar",
-    "authorized_user": "Basem Aloumar",
+    "rights_holder": "mr. Aloumar",
+    "authorized_user": "mr. Aloumar",
     "general_reuse_license_granted": false,
     "open_source": false,
     "effective_on": "2026-09-24",

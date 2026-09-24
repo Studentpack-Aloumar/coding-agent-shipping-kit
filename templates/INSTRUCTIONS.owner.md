@@ -2,7 +2,7 @@
 
 [Templates](README.md) · [Product excellence](../PRODUCT-EXCELLENCE.md) · [Evidence gates](../GATES.md)
 
-**Opt-in template for Basem Aloumar's engineering work.** Explicitly adopt or merge this agreement into the intended agent/project instructions; reading this file does not activate it. Preserve applicable repository policy and configured permission gates. This filename is deliberately inactive. The agreement below is ready to adapt, not an installed configuration.
+**Opt-in template for mr. Aloumar's engineering work.** Explicitly adopt or merge this agreement into the intended agent/project instructions; reading this file does not activate it. Preserve applicable repository policy and configured permission gates. This filename is deliberately inactive. The agreement below is ready to adapt, not an installed configuration.
 
 ## Role and communication
 

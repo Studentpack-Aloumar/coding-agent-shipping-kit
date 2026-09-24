@@ -2,6 +2,10 @@
 
 [Home](README.md) · [Prompts](PROMPTS.md) · [Setup](SETUP.md) · [Evidence](GATES.md) · [Sources](SOURCES.md)
 
+## 1.1.1 — 24 September 2026
+
+- Updated the owner display name to mr. Aloumar in the agreement, README, owner-only notice and metadata.
+
 ## 1.1.0 — 24 September 2026
 
 - Added the opt-in owner engineering agreement incorporating communication, technical discretion, adjacent defect ownership, persistence, bounded approval, patient-data handling and authorized integration defaults.

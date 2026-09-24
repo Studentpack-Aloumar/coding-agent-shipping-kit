@@ -1,10 +1,10 @@
 # Coding-agent shipping kit
 
-**24 September 2026 · v1.1.0 · Reference kit; not installed or benchmarked**
+**24 September 2026 · v1.1.1 · Reference kit; not installed or benchmarked**
 
 [Owner agreement](templates/INSTRUCTIONS.owner.md) · [Product excellence](PRODUCT-EXCELLENCE.md) · [Choose a prompt](PROMPTS.md) · [Setup](SETUP.md) · [Client compatibility](COMPATIBILITY.md) · [Evidence gates](GATES.md) · [Sources](SOURCES.md)
 
-> **Proprietary — Basem Aloumar only.** This kit is reserved for Basem Aloumar's own use and projects. It is not open source and does not grant other people a personal-use or commercial-use license. See [LICENSE](LICENSE).
+> **Proprietary — mr. Aloumar only.** This kit is reserved for mr. Aloumar's own use and projects. It is not open source and does not grant other people a personal-use or commercial-use license. See [LICENSE](LICENSE).
 > Public GitHub hosting still permits viewing and forking under GitHub's terms; this notice does not make a public repository private.
 
 ## Start here
@@ -79,6 +79,6 @@ These checks do not establish that every external claim is current or that a cod
 
 ## License and access
 
-The [owner-only notice](LICENSE) reserves applicable rights in the original kit to Basem Aloumar, while preserving third-party rights, legal exceptions and rights granted under hosting-platform terms. Use a private repository when access itself must be restricted. The kit does not install skills, modify settings or deploy an application; instruction templates use inactive filenames.
+The [owner-only notice](LICENSE) reserves applicable rights in the original kit to mr. Aloumar, while preserving third-party rights, legal exceptions and rights granted under hosting-platform terms. Use a private repository when access itself must be restricted. The kit does not install skills, modify settings or deploy an application; instruction templates use inactive filenames.
 
 The practices and prompts are original synthesis. Third-party skills are linked, not copied. No improvement in speed, cost or quality has been measured on your projects. Relevant platform references are [GitHub licensing guidance](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository) and [GitHub Terms of Service](https://docs.github.com/en/site-policy/github-terms/github-terms-of-service); the custom notice has not received legal review.
