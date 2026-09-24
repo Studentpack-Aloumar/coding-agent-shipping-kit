@@ -1,0 +1,289 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Coding-agent shipping evidence",
+  "description": "Structure only. A valid record does not prove correctness, authorization, authenticity or release readiness.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "task",
+    "candidate",
+    "completion_state",
+    "checks",
+    "review",
+    "authorizations",
+    "deployment",
+    "risks"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "task": {
+      "type": "string",
+      "minLength": 1
+    },
+    "candidate": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "repository",
+        "base_revision",
+        "head_revision",
+        "worktree_diff_identity"
+      ],
+      "properties": {
+        "repository": {
+          "type": "string",
+          "minLength": 1
+        },
+        "base_revision": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "head_revision": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "worktree_diff_identity": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "completion_state": {
+      "enum": [
+        "blocked",
+        "implemented",
+        "locally_verified",
+        "ci_verified",
+        "preview_verified",
+        "ready_for_production",
+        "production_verified"
+      ]
+    },
+    "checks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "name",
+          "kind",
+          "candidate_identity",
+          "environment",
+          "command_or_method",
+          "result",
+          "exit_code",
+          "observed_at",
+          "artifacts",
+          "notes"
+        ],
+        "properties": {
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "kind": {
+            "enum": [
+              "unit",
+              "integration",
+              "e2e",
+              "typecheck",
+              "lint",
+              "build",
+              "behavior",
+              "ci",
+              "other"
+            ]
+          },
+          "candidate_identity": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "environment": {
+            "type": "string",
+            "minLength": 1
+          },
+          "command_or_method": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "result": {
+            "enum": [
+              "pass",
+              "fail",
+              "blocked",
+              "not_run",
+              "not_applicable"
+            ]
+          },
+          "exit_code": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "observed_at": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "format": "date-time"
+          },
+          "artifacts": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "notes": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "review": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "result",
+        "reviewed_candidate",
+        "independent_context",
+        "findings",
+        "limitations"
+      ],
+      "properties": {
+        "result": {
+          "enum": [
+            "not_run",
+            "findings",
+            "no_actionable_findings",
+            "blocked"
+          ]
+        },
+        "reviewed_candidate": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "independent_context": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "findings": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "limitations": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "authorizations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "action",
+          "target",
+          "candidate_identity",
+          "approval_reference"
+        ],
+        "properties": {
+          "action": {
+            "type": "string",
+            "minLength": 1
+          },
+          "target": {
+            "type": "string",
+            "minLength": 1
+          },
+          "candidate_identity": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "approval_reference": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "deployment": {
+      "anyOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "id",
+            "target",
+            "candidate_identity",
+            "url",
+            "observed_at"
+          ],
+          "properties": {
+            "id": {
+              "type": "string",
+              "minLength": 1
+            },
+            "target": {
+              "enum": [
+                "preview",
+                "production",
+                "other"
+              ]
+            },
+            "candidate_identity": {
+              "type": "string",
+              "minLength": 1
+            },
+            "url": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "observed_at": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "format": "date-time"
+            }
+          }
+        }
+      ]
+    },
+    "risks": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

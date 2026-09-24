@@ -1,0 +1,298 @@
+{
+  "name": "coding-agent-shipping-kit",
+  "version": "1.0.1",
+  "documentation_checked_on": "2026-09-24",
+  "scope": "Source-backed reference, original prompts and inert templates; not a repository installation.",
+  "runtime_tested_on_user_repositories": false,
+  "benchmarked": false,
+  "external_writes_performed": false,
+  "sources": [
+    {
+      "id": "R01",
+      "title": "OpenAI — Codex best practices",
+      "url": "https://developers.openai.com/codex/learn/best-practices",
+      "evidence_kind": "Vendor documentation",
+      "note": "Task context, reusable instructions, selective planning and review. Redirects to ChatGPT Learn.",
+      "checked_on": "2026-09-24"
+    },
+    {
+      "id": "R02",
+      "title": "OpenAI — Agent Skills",
+      "url": "https://developers.openai.com/codex/skills",
+      "evidence_kind": "Vendor documentation",
+      "note": "Codex discovery paths, explicit invocation and skill installer. Redirects to ChatGPT Learn.",
+      "checked_on": "2026-09-24"
+    },
+    {
+      "id": "R03",
+      "title": "Anthropic — Claude Code best practices",
+      "url": "https://code.claude.com/docs/en/best-practices",
+      "evidence_kind": "Vendor documentation",
+      "note": "Conditional planning, context discipline and verifiable outcomes.",
+      "checked_on": "2026-09-24"
+    },
+    {
+      "id": "R04",
+      "title": "Anthropic — Extend Claude with skills",
+      "url": "https://code.claude.com/docs/en/skills",
+      "evidence_kind": "Vendor documentation",
+      "note": "Bundled run/verify/review skills, custom skill discovery and overrides.",
+      "checked_on": "2026-09-24"
+    },
+    {
+      "id": "R05",
+      "title": "Anthropic — Project memory and instructions",
+      "url": "https://code.claude.com/docs/en/memory",
+      "evidence_kind": "Vendor documentation",
+      "note": "Conditional AGENTS.md support and explicit CLAUDE.md imports.",
+      "checked_on": "2026-09-24"
+    },
+    {
+      "id": "R06",
+      "title": "Anthropic — Hooks guide",
+      "url": "https://code.claude.com/docs/en/hooks-guide",
+      "evidence_kind": "Vendor documentation",
+      "note": "Lifecycle hooks; distinguish executable checks from prose guidance.",
+      "checked_on": "2026-09-24"
+    },
+    {
+      "id": "R07",
+      "title": "Exa — MCP documentation",
+      "url": "https://exa.ai/docs/reference/exa-mcp",
+      "evidence_kind": "Vendor documentation",
+      "note": "Public-source discovery. Actual tool names depend on integration.",
+      "checked_on": "2026-09-24"
+    },
+    {
+      "id": "R08",
+      "title": "Upstash — Context7",
+      "url": "https://github.com/upstash/context7",
+      "evidence_kind": "Maintainer repository",
+      "note": "Version-aware documentation via CLI plus skills or MCP; inspect source coverage.",
+      "checked_on": "2026-09-24"
+    },
+    {
+      "id": "R09",
+      "title": "Superpowers — Maintainer repository",
+      "url": "https://github.com/obra/superpowers",
+      "evidence_kind": "Maintainer repository",
+      "note": "Opinionated lifecycle skills, supported agent integrations and installation.",
+      "checked_on": "2026-09-24"
+    },
+    {
+      "id": "R10",
+      "title": "Vercel — React skill source",
+      "url": "https://github.com/vercel-labs/agent-skills/blob/main/skills/react-best-practices/SKILL.md",
+      "evidence_kind": "Maintainer skill source",
+      "note": "Declared skill name is vercel-react-best-practices; folder name differs.",
+      "checked_on": "2026-09-24"
+    },
+    {
+      "id": "R11",
+      "title": "Vercel — Agent skills collection",
+      "url": "https://github.com/vercel-labs/agent-skills",
+      "evidence_kind": "Maintainer repository",
+      "note": "Includes web-design-guidelines; consult actual selected skill.",
+      "checked_on": "2026-09-24"
+    },
+    {
+      "id": "R12",
+      "title": "shadcn — Agent skills",
+      "url": "https://ui.shadcn.com/docs/skills",
+      "evidence_kind": "Vendor documentation",
+      "note": "Project-aware shadcn component and configuration guidance.",
+      "checked_on": "2026-09-24"
+    },
+    {
+      "id": "R13",
+      "title": "Supabase — Agent skills",
+      "url": "https://github.com/supabase/agent-skills",
+      "evidence_kind": "Maintainer repository",
+      "note": "Supabase product guidance and supabase-postgres-best-practices.",
+      "checked_on": "2026-09-24"
+    },
+    {
+      "id": "R14",
+      "title": "Supabase — MCP",
+      "url": "https://supabase.com/docs/guides/ai-tools/mcp",
+      "evidence_kind": "Vendor documentation",
+      "note": "Development-only data access guidance and MCP precautions.",
+      "checked_on": "2026-09-24"
+    },
+    {
+      "id": "R15",
+      "title": "Microsoft Playwright — Coding agents",
+      "url": "https://playwright.dev/docs/getting-started-cli",
+      "evidence_kind": "Vendor documentation",
+      "note": "CLI versus MCP use cases and CLI skill installation.",
+      "checked_on": "2026-09-24"
+    },
+    {
+      "id": "R16",
+      "title": "Microsoft Playwright — Test best practices",
+      "url": "https://playwright.dev/docs/best-practices",
+      "evidence_kind": "Vendor documentation",
+      "note": "User-visible tests, isolation, resilient locators and failure diagnosis.",
+      "checked_on": "2026-09-24"
+    },
+    {
+      "id": "R17",
+      "title": "GitHub — About agent skills",
+      "url": "https://docs.github.com/en/copilot/concepts/agents/about-agent-skills",
+      "evidence_kind": "Vendor documentation",
+      "note": "Supported Copilot surfaces and skill discovery directories.",
+      "checked_on": "2026-09-24"
+    },
+    {
+      "id": "R18",
+      "title": "GitHub — Copilot cloud development environment",
+      "url": "https://docs.github.com/en/copilot/how-tos/copilot-on-github/customize-copilot/customize-cloud-agent/customize-the-agent-environment",
+      "evidence_kind": "Vendor documentation",
+      "note": "copilot-setup-steps.yml and behavior when setup fails.",
+      "checked_on": "2026-09-24"
+    },
+    {
+      "id": "R19",
+      "title": "GitHub — Configure repository MCP servers",
+      "url": "https://docs.github.com/en/copilot/how-tos/copilot-on-github/customize-copilot/configure-mcp-servers",
+      "evidence_kind": "Vendor documentation",
+      "note": "Cloud/review OAuth limitation, autonomous tool use and tool allowlists.",
+      "checked_on": "2026-09-24"
+    },
+    {
+      "id": "R20",
+      "title": "OpenAI — gh-fix-ci skill",
+      "url": "https://github.com/openai/skills/blob/main/skills/.curated/gh-fix-ci/SKILL.md",
+      "evidence_kind": "Maintainer skill source",
+      "note": "GitHub Actions diagnosis with gh; approval before implementation.",
+      "checked_on": "2026-09-24"
+    },
+    {
+      "id": "R21",
+      "title": "GitHub — Official MCP server",
+      "url": "https://github.com/github/github-mcp-server",
+      "evidence_kind": "Maintainer repository",
+      "note": "Repository, PR and CI tool access; scope configured permissions.",
+      "checked_on": "2026-09-24"
+    },
+    {
+      "id": "R22",
+      "title": "Vercel — Official MCP server",
+      "url": "https://vercel.com/docs/agent-resources/vercel-mcp",
+      "evidence_kind": "Vendor documentation",
+      "note": "OAuth connection, supported clients, deployments and logs.",
+      "checked_on": "2026-09-24"
+    },
+    {
+      "id": "R23",
+      "title": "Vercel — Deployment environments",
+      "url": "https://vercel.com/docs/deployments/environments",
+      "evidence_kind": "Vendor documentation",
+      "note": "Local, Preview and Production; first deployment production caveat. Retrieved with Exa.",
+      "checked_on": "2026-09-24"
+    },
+    {
+      "id": "R24",
+      "title": "Vercel — Instant Rollback",
+      "url": "https://vercel.com/docs/instant-rollback",
+      "evidence_kind": "Vendor documentation",
+      "note": "Rollback eligibility and external configuration/data compatibility. Retrieved with Exa.",
+      "checked_on": "2026-09-24"
+    },
+    {
+      "id": "R25",
+      "title": "GitHub — Workflow concurrency",
+      "url": "https://docs.github.com/en/actions/how-tos/write-workflows/choose-when-workflows-run/control-workflow-concurrency",
+      "evidence_kind": "Vendor documentation",
+      "note": "Workflow concurrency groups and cancellation controls.",
+      "checked_on": "2026-09-24"
+    },
+    {
+      "id": "R26",
+      "title": "GitHub — Required status checks troubleshooting",
+      "url": "https://docs.github.com/en/pull-requests/how-tos/merge-and-close-pull-requests/troubleshooting-required-status-checks",
+      "evidence_kind": "Vendor documentation",
+      "note": "Required checks, skipped workflows and merge queue events.",
+      "checked_on": "2026-09-24"
+    },
+    {
+      "id": "R27",
+      "title": "OpenAI — Evaluating skills",
+      "url": "https://developers.openai.com/blog/eval-skills",
+      "evidence_kind": "Publisher evaluation guidance",
+      "note": "Evaluate workflow behavior and resource use on representative tasks.",
+      "checked_on": "2026-09-24"
+    },
+    {
+      "id": "R28",
+      "title": "Vercel — AGENTS.md versus skills evaluation",
+      "url": "https://vercel.com/blog/agents-md-outperforms-skills-in-our-agent-evals",
+      "evidence_kind": "Publisher benchmark",
+      "note": "Narrow Next.js experiment; not a universal agent or skill ranking.",
+      "checked_on": "2026-09-24"
+    },
+    {
+      "id": "R29",
+      "title": "Agent Skills — Format specification",
+      "url": "https://agentskills.io/specification",
+      "evidence_kind": "Open format specification",
+      "note": "SKILL.md, metadata, supporting files and progressive loading.",
+      "checked_on": "2026-09-24"
+    },
+    {
+      "id": "R30",
+      "title": "Cursor — Skills",
+      "url": "https://cursor.com/docs/skills",
+      "evidence_kind": "Vendor documentation",
+      "note": "Skill discovery paths, compatibility locations and invocation.",
+      "checked_on": "2026-09-24"
+    },
+    {
+      "id": "R31",
+      "title": "Cursor — Rules",
+      "url": "https://cursor.com/docs/rules",
+      "evidence_kind": "Vendor documentation",
+      "note": "Project rules and AGENTS.md guidance.",
+      "checked_on": "2026-09-24"
+    },
+    {
+      "id": "R32",
+      "title": "Anthropic — Common workflows",
+      "url": "https://code.claude.com/docs/en/common-workflows",
+      "evidence_kind": "Vendor documentation",
+      "note": "Repository exploration, worktrees and delegated research.",
+      "checked_on": "2026-09-24"
+    }
+  ],
+  "prompt_count": 18,
+  "prompt_files": [
+    "prompts/00-onboard-repo.md",
+    "prompts/01-task-contract.md",
+    "prompts/02-research-uncertainty.md",
+    "prompts/03-plan-risky-change.md",
+    "prompts/04-implement.md",
+    "prompts/05-ui-change.md",
+    "prompts/06-data-change.md",
+    "prompts/07-verify-local.md",
+    "prompts/08-debug-failure.md",
+    "prompts/09-review-read-only.md",
+    "prompts/10-ci-diagnosis.md",
+    "prompts/11-prepare-pr.md",
+    "prompts/12-verify-preview.md",
+    "prompts/13-production-readiness.md",
+    "prompts/14-authorized-release.md",
+    "prompts/15-post-release.md",
+    "prompts/16-handoff.md",
+    "prompts/17-evaluate-addition.md"
+  ],
+  "rights_notice": {
+    "name": "Proprietary — Basem Aloumar only",
+    "file": "LICENSE",
+    "rights_holder": "Basem Aloumar",
+    "authorized_user": "Basem Aloumar",
+    "general_reuse_license_granted": false,
+    "open_source": false,
+    "effective_on": "2026-09-24",
+    "qualification": "Subject to applicable rights, platform terms, prior licenses, third-party rights and legal exceptions."
+  }
+}
